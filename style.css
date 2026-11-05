@@ -23,6 +23,7 @@ input[type=checkbox]{accent-color:var(--red)}
 img,svg{max-width:100%}
 ::selection{background:#f7c9c5;color:#6a1821}
 header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1360px;min-height:90px;margin:auto;padding:0 40px;border-bottom:0;background:linear-gradient(105deg,#fffaf7f2,#f6dfd9f2);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;pointer-events:none;background:linear-gradient(90deg,transparent 2%,#c8161e12 22%,#c8161e42 50%,#c8161e12 78%,transparent 98%)}
 .brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
 .brandmark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--red);color:#fff;font-size:22px;box-shadow:0 6px 16px #c8161e16}
 .brand strong{font-family:var(--serif);font-size:22px;letter-spacing:.03em;white-space:nowrap}

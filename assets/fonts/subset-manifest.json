@@ -1,0 +1,102 @@
+{
+  "character_count": 936,
+  "chinese_character_count": 809,
+  "text_inputs": [
+    "index.html",
+    "app.js",
+    "data.js"
+  ],
+  "extra_text": "上海交通大学回到所有方向学海砺羽，赛场亮剑连接计算机学习与跨学科的参赛选择。全国大学生电子设计竞赛 and printable ASCII U+0020–U+007E",
+  "fonts": [
+    {
+      "file": "noto-sans-sc-regular.woff2",
+      "family": "Noto Sans CJK SC",
+      "weight": 400,
+      "bytes": 288204,
+      "glyphs": 1984,
+      "character_count": 936,
+      "missing": "⌕﻿",
+      "source": "fonts-noto-cjk package / NotoSansCJK-Regular.ttc / SC face index 2",
+      "source_sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+      "sha256": "0414771502d1aa1c49646f049c83e4ed37a5d365a54bb7282a595cd2aee90029"
+    },
+    {
+      "file": "noto-sans-sc-bold.woff2",
+      "family": "Noto Sans CJK SC",
+      "weight": 700,
+      "bytes": 294000,
+      "glyphs": 1984,
+      "character_count": 936,
+      "missing": "⌕﻿",
+      "source": "fonts-noto-cjk package / NotoSansCJK-Bold.ttc / SC face index 2",
+      "source_sha256": "faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb",
+      "sha256": "8078ce8a09aa8e3054dd83bd1ef5ba8105bcf492c83fdb41f1782169f365e41d"
+    },
+    {
+      "file": "noto-serif-sc-bold.woff2",
+      "family": "Noto Serif CJK SC",
+      "weight": 700,
+      "bytes": 415820,
+      "glyphs": 1935,
+      "character_count": 936,
+      "missing": "⌕﻿",
+      "source": "fonts-noto-cjk package / NotoSerifCJK-Bold.ttc / SC face index 2",
+      "source_sha256": "1505ee3b9c0890fae6302ee0e9c6fd74d690f4a55a6ace1d9944f3f6352d622d",
+      "sha256": "f21eaa408b45a1413dea33c8d1ac3c3dfa1cc5142049962cefe5e790e5ac4b8b"
+    }
+  ],
+  "verification": {
+    "version": 10,
+    "contests": 30,
+    "courses": 25,
+    "all_contest_names_covered": true,
+    "all_requested_chinese_covered": true,
+    "restored_footer_covered": true
+  },
+  "note": "Version 10 retains the unchanged version 9 font subsets as a coverage superset. Top-level character counts and per-font character_count describe the generation corpus; input_sha256 and current_corpus describe the current 30-contest verification. Only U+2315 (search symbol; system fallback) and U+FEFF (CSV BOM; not rendered) remain outside the fonts.",
+  "generation_corpus": {
+    "version": 9,
+    "contests": 41,
+    "courses": 26,
+    "character_count": 936,
+    "chinese_character_count": 809,
+    "input_sha256": {
+      "index.html": "595cf3ced9a9ada0e6f61c92afed023fce821f056e5c537badb12861dd869407",
+      "app.js": "6bf0b4664d0db89eec0c543341189eee3b69d16e9b238c9acd2a7cf3a68e4757",
+      "data.js": "b7d64dcff17b3f3938e7bf4f8253693f1d9e3703c85013dc42d5435b62df079d"
+    },
+    "extra_text": "上海交通大学回到所有方向学海砺羽，赛场亮剑连接计算机学习与跨学科的参赛选择。全国大学生电子设计竞赛 and printable ASCII U+0020–U+007E"
+  },
+  "input_sha256": {
+    "index.html": "98461644e511b7d32f4c12efec37dbb47d9b8033549e85b23071201642d4bba0",
+    "app.js": "6bf0b4664d0db89eec0c543341189eee3b69d16e9b238c9acd2a7cf3a68e4757",
+    "data.js": "fc5453218f887a56e09193df567e409be43130ed2453679ee755c8252346ea11"
+  },
+  "current_corpus": {
+    "version": 10,
+    "character_count": 896,
+    "chinese_character_count": 769,
+    "extra_text": "上海交通大学回到所有方向学海砺羽，赛场亮剑聚焦计算机与信息类本科生的参赛选择。全国大学生电子设计竞赛 and printable ASCII U+0020–U+007E",
+    "font_coverage": [
+      {
+        "file": "noto-sans-sc-regular.woff2",
+        "missing": "⌕﻿",
+        "all_current_chinese_covered": true,
+        "all_current_contest_names_covered": true
+      },
+      {
+        "file": "noto-sans-sc-bold.woff2",
+        "missing": "⌕﻿",
+        "all_current_chinese_covered": true,
+        "all_current_contest_names_covered": true
+      },
+      {
+        "file": "noto-serif-sc-bold.woff2",
+        "missing": "⌕﻿",
+        "all_current_chinese_covered": true,
+        "all_current_contest_names_covered": true
+      }
+    ]
+  },
+  "distribution_note": "GitHub Pages repository-root distribution. Paths are relative to this repository root; historical generation hashes remain historical. Font binaries, source-font hashes, and current page/data hashes are unchanged."
+}

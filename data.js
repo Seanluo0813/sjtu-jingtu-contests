@@ -17,8 +17,8 @@ window.CONTEST_DATA = {
       "unknown": "对应届次完整报名日期未核实"
     },
     "researchStatus": "2023历史来源已核验，未核实信息保持空值或明确说明",
-    "recordCount": 30,
-    "uniqueCatalogItems": 30,
+    "recordCount": 28,
+    "uniqueCatalogItems": 28,
     "categories": [
       "算法编程",
       "工程开发",
@@ -26,8 +26,8 @@ window.CONTEST_DATA = {
       "硬件系统",
       "网络安全"
     ],
-    "knownWindowCount": 17,
-    "partialWindowCount": 9,
+    "knownWindowCount": 16,
+    "partialWindowCount": 8,
     "unknownWindowCount": 4,
     "officialUrlPolicy": "officialUrl只提供赛事官网入口；2023事实以evidence历史来源为依据。",
     "selectionPolicy": "只收录与计算机、信息技术有直接技术关联的赛事；保留算法、数据与人工智能、电子和嵌入式、通信与网安、软件开发和机器人方向。"
@@ -2058,105 +2058,6 @@ window.CONTEST_DATA = {
       ]
     },
     {
-      "id": "service-outsourcing",
-      "catalogNumber": 24,
-      "parentCatalogNo": 24,
-      "catalogName": "中国大学生服务外包创新创业大赛",
-      "name": "中国大学生服务外包创新创业大赛",
-      "category": "工程开发",
-      "summary": "聚焦企业命题的软件与信息技术项目，将真实需求开发为可展示的产品与服务。",
-      "level": "榜单内",
-      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
-      "grades": [
-        2,
-        3,
-        4
-      ],
-      "gradeBasis": "项目编辑建议，非官方资格条件。",
-      "eligibility": "2023第十四届面向高校全日制在校学生（含本科及2023应届毕业生）和毕业不超过5年的大学生；每队仅选一个竞赛类别。",
-      "teamFormat": "团队",
-      "teamSize": "最多5名学生、2名指导教师",
-      "deliveryMode": "本条聚焦A类企业命题中的软件与信息技术项目；作品评审、区域赛、全国决赛",
-      "courses": [
-        "软件工程",
-        "数据库",
-        "程序设计",
-        "软件测试"
-      ],
-      "courseRelation": [
-        {
-          "course": "软件工程",
-          "use": "将企业需求拆解为功能、里程碑和协作任务。"
-        },
-        {
-          "course": "数据库",
-          "use": "组织业务数据及查询接口。"
-        },
-        {
-          "course": "程序设计",
-          "use": "实现系统功能并完成集成。"
-        },
-        {
-          "course": "软件测试",
-          "use": "用测试验证关键业务流程和交付质量。"
-        }
-      ],
-      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
-      "tags": [
-        "企业命题",
-        "服务外包",
-        "产品开发"
-      ],
-      "registration": {
-        "year": 2023,
-        "edition": "2023年第十四届",
-        "start": "2022-11-21",
-        "end": "2023-03-26",
-        "status": "complete",
-        "windowText": "2022年11月21日—2023年3月26日（延期后）。",
-        "note": "原截止日为2023年3月10日，后延至3月26日；本条聚焦A类软件与信息技术项目，校内选拔可能提前截止。",
-        "months": [
-          1,
-          2,
-          3
-        ],
-        "sourceIds": [
-          "fwwb2023-notice",
-          "fwwb2023-extension"
-        ],
-        "scope": "全国A类企业命题报名与选题"
-      },
-      "officialUrl": "https://www.fwwb.org.cn/",
-      "evidence": [
-        {
-          "id": "fwwb2023-notice",
-          "title": "上海电机学院转发第十四届服创大赛通知",
-          "url": "https://gyjszx.sdju.edu.cn/_t968/2023/0105/c3185a114895/page.htm",
-          "supports": [
-            "2023届资格",
-            "队伍人数",
-            "原报名起止日期",
-            "A/B类别"
-          ],
-          "type": "university",
-          "accessed": "2026-11-05",
-          "accessNote": "已读取对应2023届历史来源正文。"
-        },
-        {
-          "id": "fwwb2023-extension",
-          "title": "广州软件学院：第十四届服创大赛延期通知",
-          "url": "https://www.gzus.edu.cn/cxcyxy/info/1044/1081.htm",
-          "supports": [
-            "全国报名延至2023年3月26日",
-            "区分校内选拔截止"
-          ],
-          "type": "university",
-          "accessed": "2026-11-05",
-          "accessNote": "正文明确全国A/B两类延期至3月26日；本校B类校赛另为3月10日。"
-        }
-      ]
-    },
-    {
       "id": "datang-cup",
       "catalogNumber": 41,
       "parentCatalogNo": 41,
@@ -2362,89 +2263,6 @@ window.CONTEST_DATA = {
             "上海赛区本科资格",
             "校赛及省国赛办法",
             "按项目区分线上线下"
-          ],
-          "type": "university",
-          "accessed": "2026-11-05",
-          "accessNote": "已读取对应2023届历史来源正文。"
-        }
-      ]
-    },
-    {
-      "id": "ican",
-      "catalogNumber": 54,
-      "parentCatalogNo": 54,
-      "catalogName": "iCAN大学生创新创业大赛",
-      "name": "iCAN大学生创新创业大赛",
-      "category": "工程开发",
-      "summary": "聚焦创新赛道的信息技术原型，让原创想法成为能演示、能操作的真实应用。",
-      "level": "榜单内",
-      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
-      "grades": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "gradeBasis": "项目编辑建议，非官方资格条件。",
-      "eligibility": "2023第十七届创新赛道面向高校及科研院所在校学生（含本科等）；需原创可操作原型，禁止跨赛区组队，每人限一队。",
-      "teamFormat": "团队",
-      "teamSize": "创新赛道2—5名队员、最多2名指导教师",
-      "deliveryMode": "原型作品与项目说明；校内选拔、分赛区选拔、全国总决赛",
-      "courses": [
-        "软件工程",
-        "物联网技术",
-        "人机交互",
-        "程序设计"
-      ],
-      "courseRelation": [
-        {
-          "course": "软件工程",
-          "use": "规划需求、原型开发与项目文档。"
-        },
-        {
-          "course": "物联网技术",
-          "use": "连接感知设备与应用服务。"
-        },
-        {
-          "course": "人机交互",
-          "use": "验证用户任务与产品交互体验。"
-        },
-        {
-          "course": "程序设计",
-          "use": "实现原型的核心功能。"
-        }
-      ],
-      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
-      "tags": [
-        "创新原型",
-        "物联网",
-        "应用创新"
-      ],
-      "registration": {
-        "year": 2023,
-        "edition": "2023年第十七届·创新赛道",
-        "start": null,
-        "end": "2023-07-31",
-        "status": "partial",
-        "windowText": "2023年7月31日报名截止；起日仅说明为5月，未核实到具体日。",
-        "note": "本条聚焦与计算机/信息类相关的创新赛道；挑战赛另有赛题与报名安排，不能共用本期限。",
-        "months": [],
-        "sourceIds": [
-          "ican2023"
-        ],
-        "scope": "第十七届创新赛道报名"
-      },
-      "officialUrl": "https://www.g-ican.com/",
-      "evidence": [
-        {
-          "id": "ican2023",
-          "title": "武汉纺织大学：2023年第十七届iCAN大赛通知",
-          "url": "https://cyxy.wtu.edu.cn/info/1023/1923.htm",
-          "supports": [
-            "2023创新赛道本科资格",
-            "2至5人组队",
-            "7月31日报名截止",
-            "信息技术应用与原型要求"
           ],
           "type": "university",
           "accessed": "2026-11-05",

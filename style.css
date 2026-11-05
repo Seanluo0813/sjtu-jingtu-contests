@@ -71,9 +71,9 @@ h3{margin:0 0 10px;font-size:16px;font-weight:600;line-height:1.65}
 .orbit-center:active{transform:translate(-50%,-50%) scale(1.015);filter:brightness(1.04)}
 .hero-actions .primary:hover{color:#fff;border-color:#a51a27;background:linear-gradient(135deg,#dc2831,var(--red) 60%,#a31521)}
 @media(hover:hover){
-  .hero-actions .primary:hover{transform:scale(1.045);filter:brightness(1.08);box-shadow:inset 0 1px 0 #ffffff45,0 0 0 16px #c8161e18,0 20px 42px #97161e40}
+  .hero-actions .primary:hover{transform:scale(1.045);filter:brightness(1.08);box-shadow:inset 0 1px 0 #ffffff45,0 0 0 5px #c8161e18,0 20px 42px #97161e40}
 }
-.hero-actions .primary:focus-visible{transform:scale(1.045);filter:brightness(1.08);box-shadow:inset 0 1px 0 #ffffff45,0 0 0 16px #c8161e18,0 20px 42px #97161e40}
+.hero-actions .primary:focus-visible{transform:scale(1.045);filter:brightness(1.08);box-shadow:inset 0 1px 0 #ffffff45,0 0 0 5px #c8161e18,0 20px 42px #97161e40}
 .hero-actions .primary:active{transform:scale(1.015);filter:brightness(1.04)}
 .orbit-center span{color:#f3c1bf;font-size:9px;letter-spacing:2.1px}
 .orbit-center b{margin:7px 0 10px;font-size:17px;font-weight:550;letter-spacing:1px;line-height:1.3}

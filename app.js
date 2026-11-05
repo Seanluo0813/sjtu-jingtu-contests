@@ -3,6 +3,10 @@
   const data = window.CONTEST_DATA;
   const all = data.contests;
   const $ = s => document.querySelector(s);
+  const header = $('header');
+  const syncHeaderHeight = () => document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+  syncHeaderHeight();
+  new ResizeObserver(syncHeaderHeight).observe(header);
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const grades = v => v.map(n => ['','大一','大二','大三','大四'][n]).join(' / ');
   const ext = '<img src="assets/icons/external.svg" width="14" height="14" alt="">';

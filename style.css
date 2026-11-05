@@ -8,7 +8,7 @@
   --shadow:0 12px 34px #6c302012,0 2px 6px #6c302008; --sans:"Jingtu Sans","PingFang SC","Microsoft YaHei",sans-serif; --serif:"Jingtu Serif","Noto Serif CJK SC","Songti SC",serif;
 }
 *{box-sizing:border-box}
-html{scroll-padding-top:28px}
+html{scroll-padding-top:calc(var(--header-height,90px) + 24px)}
 body{margin:0;color:var(--ink);font:15px/1.8 var(--sans);background:radial-gradient(ellipse at 96% 3%,#b21d2b1f,transparent 36%),radial-gradient(ellipse at 2% 45%,#bc293710,transparent 42%),linear-gradient(150deg,#fffaf6 0%,#fbece5 27%,#fffaf7 58%,#f4e1db 100%);background-attachment:fixed;-webkit-font-smoothing:antialiased}
 body:has(#compareTray:not([hidden])){padding-bottom:108px}
 [hidden]{display:none!important}
@@ -22,7 +22,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 input[type=checkbox]{accent-color:var(--red)}
 img,svg{max-width:100%}
 ::selection{background:#f7c9c5;color:#6a1821}
-header{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1360px;min-height:90px;margin:auto;padding:0 40px;border-bottom:0}
+header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1360px;min-height:90px;margin:auto;padding:0 40px;border-bottom:0;background:linear-gradient(105deg,#fffaf7f2,#f6dfd9f2);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 .brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
 .brandmark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--red);color:#fff;font-size:22px;box-shadow:0 6px 16px #c8161e16}
 .brand strong{font-family:var(--serif);font-size:22px;letter-spacing:.03em;white-space:nowrap}
@@ -283,6 +283,7 @@ header nav a{color:#573a45}
   .compare-tray{gap:10px;padding:12px 15px}.compare-tray>div:first-child{display:block}.compare-tray #compareCount{display:block}
 }
 @media(max-width:700px){
+  html{scroll-padding-top:calc(var(--header-height,124px) + 16px)}
   .sources{--watermark-size:clamp(440px,115vw,600px);min-height:0}
   .source-watermark{top:-45px;bottom:auto;left:auto;right:0;transform:translateX(33.333333%);opacity:.075}
   body{background-attachment:scroll}body:has(#compareTray:not([hidden])){padding-bottom:180px}

@@ -1,0 +1,2906 @@
+window.CONTEST_DATA = {
+  "meta": {
+    "schemaVersion": 1,
+    "referenceYear": 2023,
+    "accessed": "2026-11-05",
+    "catalogYear": 2023,
+    "catalogCount": 84,
+    "catalogUrl": "https://cmsfiles.zhongkefu.com.cn/caheedu/gdjy/file/20230323/1679556185276507.pdf",
+    "catalogTitle": "2023全国普通高校大学生竞赛分析报告竞赛目录",
+    "publisher": "中国高等教育学会",
+    "catalogNote": "2023-03-22随2022年度报告发布的2023竞赛目录，共84项。序号是目录顺序，不代表荣誉排名。",
+    "timingPolicy": "仅呈现2023届/赛季的历史报名记录；真实报名日期可能跨至2022年。不预测当前报名状态。",
+    "editorialPolicy": "方向、年级与课程关系是项目编辑建议；资格、人数、赛制以对应2023来源为准。",
+    "statusDefinitions": {
+      "complete": "已核到对应届次报名起止日期",
+      "partial": "仅核到起日或截止日",
+      "unknown": "对应届次完整报名日期未核实"
+    },
+    "researchStatus": "2023历史来源已核验，未核实信息保持空值或明确说明",
+    "recordCount": 30,
+    "uniqueCatalogItems": 30,
+    "categories": [
+      "算法编程",
+      "工程开发",
+      "数据智能",
+      "硬件系统",
+      "网络安全"
+    ],
+    "knownWindowCount": 17,
+    "partialWindowCount": 9,
+    "unknownWindowCount": 4,
+    "officialUrlPolicy": "officialUrl只提供赛事官网入口；2023事实以evidence历史来源为依据。",
+    "selectionPolicy": "只收录与计算机、信息技术有直接技术关联的赛事；保留算法、数据与人工智能、电子和嵌入式、通信与网安、软件开发和机器人方向。"
+  },
+  "contests": [
+    {
+      "id": "icpc",
+      "catalogNumber": 4,
+      "parentCatalogNo": 4,
+      "catalogName": "ACM-ICPC国际大学生程序设计竞赛",
+      "name": "ICPC 国际大学生程序设计竞赛",
+      "category": "算法编程",
+      "summary": "协同解决限时算法题，在正确性与效率之间做取舍。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023济南站：同校正式注册学生，参赛时高中毕业不超过5年；由学校按获配名额报名。",
+      "teamFormat": "团队",
+      "teamSize": "3名学生＋1名教练（2023济南站）",
+      "deliveryMode": "线下赛站竞赛（2023济南站）",
+      "courses": [
+        "程序设计",
+        "数据结构",
+        "算法设计"
+      ],
+      "courseRelation": [
+        {
+          "course": "程序设计",
+          "use": "实现输入输出、边界处理与调试。"
+        },
+        {
+          "course": "数据结构",
+          "use": "选用树、图、堆等结构组织问题。"
+        },
+        {
+          "course": "算法设计",
+          "use": "分析复杂度并设计搜索、动态规划等策略。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "限时编程",
+        "复杂度",
+        "协作"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "第48届／2023亚洲区域赛·济南站",
+        "start": null,
+        "end": "2023-11-17",
+        "status": "partial",
+        "windowText": "2023济南站：11月17日13:00截止，起日未核实。",
+        "note": "此记录只适用于济南站；其他区域站另有安排，不以比赛日期代替报名日。",
+        "months": [],
+        "sourceIds": [
+          "icpc2023"
+        ],
+        "scope": "2023亚洲区域赛济南站"
+      },
+      "officialUrl": "https://icpc.global/",
+      "evidence": [
+        {
+          "id": "icpc2023",
+          "title": "第48届ICPC亚洲区域赛（济南站）报名指南",
+          "url": "https://icpc.pku.edu.cn/docs/20231117092948629366.pdf",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "2023站点报名截止",
+            "同校3人及资格",
+            "现场日程"
+          ],
+          "accessNote": "ICPC中国赛事站点北京大学网站保存的官方指南；已下载PDF核读。"
+        }
+      ]
+    },
+    {
+      "id": "cumcm",
+      "catalogNumber": 5,
+      "parentCatalogNo": 5,
+      "catalogName": "全国大学生数学建模竞赛",
+      "name": "全国大学生数学建模竞赛",
+      "category": "数据智能",
+      "summary": "将现实问题转化为数学模型，用计算实验和论文解释结论。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023届面向大学生，专业不限；本科生参加本科组，研究生不得参赛；同校组队。",
+      "teamFormat": "团队",
+      "teamSize": "不超过3名学生（2023通知按3人组队）",
+      "deliveryMode": "线上／通讯竞赛；由学校组织监督",
+      "courses": [
+        "高等数学",
+        "线性代数",
+        "概率统计",
+        "Python程序设计"
+      ],
+      "courseRelation": [
+        {
+          "course": "高等数学",
+          "use": "建立连续变化与优化问题模型。"
+        },
+        {
+          "course": "线性代数",
+          "use": "描述矩阵关系并求解线性系统。"
+        },
+        {
+          "course": "概率统计",
+          "use": "分析数据分布、估计参数与检验假设。"
+        },
+        {
+          "course": "Python程序设计",
+          "use": "清洗数据、实现模型并绘制结果。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "建模",
+        "数据分析",
+        "论文"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023高教社杯全国大学生数学建模竞赛",
+        "start": "2023-05-01",
+        "end": "2023-09-04",
+        "status": "complete",
+        "windowText": "2023年5月1日09:00—9月4日20:00。",
+        "note": "这是全国参赛队报名注册与资格审查窗口；校内选拔可能更早，9月7—10日为比赛时间。",
+        "months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "sourceIds": [
+          "cumcm2023"
+        ],
+        "scope": "全国对应赛道"
+      },
+      "officialUrl": "https://www.mcm.edu.cn/",
+      "evidence": [
+        {
+          "id": "cumcm2023",
+          "title": "2023高教社杯全国大学生数学建模竞赛第一次通知及附件",
+          "url": "https://www.mcm.edu.cn/upload_cn/node/616/FJ7WIe5Qd4d3b4b354e54c657f4f323281c68fc4.pdf",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "2023报名起止",
+            "参赛资格、人数",
+            "通讯竞赛形式"
+          ],
+          "accessNote": "已下载官方PDF；报名须知表1和附章程分别核对。"
+        }
+      ]
+    },
+    {
+      "id": "nuedc",
+      "catalogNumber": 6,
+      "parentCatalogNo": 6,
+      "catalogName": "全国大学生电子设计竞赛",
+      "name": "全国大学生电子设计竞赛",
+      "category": "硬件系统",
+      "summary": "在限时任务中完成电路、嵌入式程序与实物测试，把设计落到可测量的作品上。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023全国通知设本科组和高职高专组；在校学生经所在学校统一向赛区报名，本科生参加本科组。",
+      "teamFormat": "团队",
+      "teamSize": "3名学生一队",
+      "deliveryMode": "网上统一发题，在学校指定场地完成设计制作，由赛区组织测评与全国评审",
+      "courses": [
+        "数字逻辑",
+        "嵌入式系统",
+        "C语言程序设计",
+        "自动控制"
+      ],
+      "courseRelation": [
+        {
+          "course": "数字逻辑",
+          "use": "设计数字电路及接口逻辑。"
+        },
+        {
+          "course": "嵌入式系统",
+          "use": "连接处理器、外设与采集控制模块。"
+        },
+        {
+          "course": "C语言程序设计",
+          "use": "编写驱动、控制流程和调试程序。"
+        },
+        {
+          "course": "自动控制",
+          "use": "分析反馈并改善系统动态表现。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "电赛",
+        "NUEDC",
+        "电子设计",
+        "限时制作",
+        "测量控制"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年全国大学生电子设计竞赛",
+        "start": null,
+        "end": "2023-05-31",
+        "status": "partial",
+        "windowText": "全国初始通知：2023年5月31日截止；开始日期未核实。",
+        "sourceIds": [
+          "nuedc2023notice"
+        ],
+        "note": "这是全国组委会初始通知中的报名截止，由各赛区汇总。各校或赛区后续补报、延期未逐区核实；8月2—5日为比赛日期，未当作报名窗口。",
+        "months": [],
+        "scope": "2023全国通知初始报名安排"
+      },
+      "officialUrl": "https://nuedc-sh.sjtu.edu.cn/",
+      "evidence": [
+        {
+          "id": "nuedc2023notice",
+          "title": "关于组织2023年全国大学生电子设计竞赛的通知（全国组委会）",
+          "url": "https://nuedc-sh.sjtu.edu.cn/storage/seiee/project/file/2023/03/ad4deb61024228f33d49e7d19a13fdc1.pdf",
+          "supports": [
+            "2023赛事存在",
+            "本科组与3人组队",
+            "5月31日报名截止",
+            "网上发题及赛区组织形式"
+          ],
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "note": "全国组委会通知PDF，上海交通大学承办的上海赛区官网保存。报名开始日未给出；不以开赛日推算。",
+          "accessNote": "全国组委会通知PDF，上海交通大学承办的上海赛区官网保存。报名开始日未给出；不以开赛日推算。"
+        },
+        {
+          "id": "nuedc2023schedule",
+          "title": "2023年全国大学生电子设计竞赛进度安排",
+          "url": "https://nuedc-sh.sjtu.edu.cn/storage/seiee/project/file/2023/03/cadfec46b7b7b7ed825baaf9f603771f.pdf",
+          "supports": [
+            "2023年8月2—5日竞赛",
+            "赛区测评与全国评审流程"
+          ],
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "note": "比赛时间仅用于赛制说明，不进入报名日历。",
+          "accessNote": "比赛时间仅用于赛制说明，不进入报名日历。"
+        }
+      ]
+    },
+    {
+      "id": "smartcar",
+      "catalogNumber": 11,
+      "parentCatalogNo": 11,
+      "catalogName": "全国大学生智能汽车竞赛",
+      "name": "全国大学生智能汽车竞赛",
+      "category": "硬件系统",
+      "summary": "围绕自主运行的小车完成感知、控制与软硬件联调。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023竞速组除电磁专科组外须为全日制在校本科生；创意组别另有规则。",
+      "teamFormat": "团队",
+      "teamSize": "竞速组通常3人；智能视觉、双车电能接力、完全模型组允许5人",
+      "deliveryMode": "线下车模竞速；创意组别形式另查2023细则",
+      "courses": [
+        "嵌入式系统",
+        "自动控制",
+        "计算机视觉"
+      ],
+      "courseRelation": [
+        {
+          "course": "嵌入式系统",
+          "use": "编写驱动并协调传感器与执行器。"
+        },
+        {
+          "course": "自动控制",
+          "use": "调节速度、转向和反馈控制。"
+        },
+        {
+          "course": "计算机视觉",
+          "use": "在视觉组任务中提取道路或目标信息。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "智能车",
+        "控制",
+        "软硬协同"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十八届",
+        "start": null,
+        "end": null,
+        "status": "unknown",
+        "windowText": "2023届：全国／分赛区统一报名窗口未核实。",
+        "note": "已核通知中的5月30日是上海工程技术大学校内预报名截止，未将其写成全国截止。",
+        "months": [],
+        "sourceIds": [
+          "smartcar2023"
+        ],
+        "scope": "全国对应赛道"
+      },
+      "officialUrl": "https://www.smartcar.zone/",
+      "evidence": [
+        {
+          "id": "smartcar2023",
+          "title": "上海工程技术大学关于参加2023第十八届智能汽车竞赛的通知",
+          "url": "https://www.sues.edu.cn/a7/5c/c17466a239452/page.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023组别人数",
+            "本科生资格",
+            "校内预报名不能视为全国窗口"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        },
+        {
+          "id": "smartcar2023-final",
+          "title": "四川大学第十八届智能汽车竞赛参赛报道",
+          "url": "https://ee.scu.edu.cn/zysyzx/info/1036/1087.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023现场总决赛"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        }
+      ]
+    },
+    {
+      "id": "robomaster",
+      "catalogNumber": 19,
+      "parentCatalogNo": 19,
+      "catalogName": "全国大学生机器人大赛-①RoboMaster、②RoboCon",
+      "name": "RoboMaster · RMUC 2023超级对抗赛",
+      "category": "硬件系统",
+      "summary": "在机器人战队中协作完成机械、嵌入式、控制与视觉系统。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "RMUC 2023高校团队；正式队员须符合手册的在校身份要求，含专科、本科和硕士等。",
+      "teamFormat": "团队",
+      "teamSize": "正式队员10–35人；导师、顾问等职位另列",
+      "deliveryMode": "线上技术评审＋线下实体机器人对抗",
+      "courses": [
+        "嵌入式系统",
+        "自动控制",
+        "计算机视觉",
+        "计算机网络"
+      ],
+      "courseRelation": [
+        {
+          "course": "嵌入式系统",
+          "use": "实现电机、传感器和板间通信驱动。"
+        },
+        {
+          "course": "自动控制",
+          "use": "设计底盘与云台的反馈控制。"
+        },
+        {
+          "course": "计算机视觉",
+          "use": "识别目标并支持机器人感知。"
+        },
+        {
+          "course": "计算机网络",
+          "use": "处理机器人之间和操作端的通信。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "机器人",
+        "工程协作",
+        "战队"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "RMUC 2023超级对抗赛·内地队伍",
+        "start": "2022-10-26",
+        "end": "2022-11-16",
+        "status": "complete",
+        "windowText": "2023赛季内地队：2022年10月26日18:00—11月16日18:00。",
+        "note": "报名发生于上一自然年；港澳台及海外队伍截止2022年11月23日18:00。不适用于RoboCon或高校联盟赛。",
+        "months": [
+          10,
+          11
+        ],
+        "sourceIds": [
+          "rm2023"
+        ],
+        "scope": "RMUC 2023内地队伍"
+      },
+      "officialUrl": "https://www.robomaster.com/",
+      "evidence": [
+        {
+          "id": "rm2023",
+          "title": "RoboMaster 2023超级对抗赛参赛手册V1.1（2023-01-13）",
+          "url": "https://terra-1-g.djicdn.com/b2a076471c6c4b72b574a977334d3e05/RM2022/RoboMaster%202023%20%E6%9C%BA%E7%94%B2%E5%A4%A7%E5%B8%88%E8%B6%85%E7%BA%A7%E5%AF%B9%E6%8A%97%E8%B5%9B%E5%8F%82%E8%B5%9B%E6%89%8B%E5%86%8C%20V1.1%EF%BC%8820230113%EF%BC%89.pdf",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "2023赛季报名窗口",
+            "正式队员10–35人",
+            "参赛资格与技术评审"
+          ],
+          "accessNote": "由官方2023归档链接取得；印刷第10页职位、第13页时间表。"
+        },
+        {
+          "id": "rm2023-archive",
+          "title": "RoboMaster官方2023赛季规范文件归档",
+          "url": "https://www.robomaster.com/zh-CN/resource/pages/announcement/1486",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "2023官方规范文件入口"
+          ],
+          "accessNote": "已读取归档并核对PDF对应版本。"
+        }
+      ]
+    },
+    {
+      "id": "computer-design",
+      "catalogNumber": 25,
+      "parentCatalogNo": 25,
+      "catalogName": "中国大学生计算机设计大赛",
+      "name": "中国大学生计算机设计大赛",
+      "category": "工程开发",
+      "summary": "将软件、数据或交互创意做成可展示、可说明的作品。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023届国赛面向当年在籍本科生；经校赛、省赛推荐入围国赛；不允许跨校组队。",
+      "teamFormat": "个人+团队",
+      "teamSize": "通常1–3人；数媒动漫与短片、数媒游戏与交互设计为1–5人",
+      "deliveryMode": "2023国赛决赛采用线上比赛；校赛、省赛按各自安排",
+      "courses": [
+        "程序设计",
+        "软件工程",
+        "数据库",
+        "人机交互"
+      ],
+      "courseRelation": [
+        {
+          "course": "程序设计",
+          "use": "实现作品的主要交互与计算功能。"
+        },
+        {
+          "course": "软件工程",
+          "use": "组织需求、版本协作、测试和文档。"
+        },
+        {
+          "course": "数据库",
+          "use": "设计数据结构、持久化和查询。"
+        },
+        {
+          "course": "人机交互",
+          "use": "设计信息层级并评估交互可用性。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "应用作品",
+        "可视化",
+        "交互"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第16届·国赛入围信息填报",
+        "start": null,
+        "end": "2023-05-30",
+        "status": "partial",
+        "windowText": "2023国赛入围后信息填报：5月30日截止；起日未核实。",
+        "note": "仅为已获省赛推荐者的国赛填报与核查期限。校赛、省赛报名独立安排；不是首次报名的全国统一期限。",
+        "months": [],
+        "sourceIds": [
+          "design2023-rules"
+        ],
+        "scope": "入围国赛后的信息填报与核查"
+      },
+      "officialUrl": "https://jsjds.blcu.edu.cn/",
+      "evidence": [
+        {
+          "id": "design2023-rules",
+          "title": "安徽医科大学转载2023计算机设计大赛参赛要求",
+          "url": "https://rwyx.ahmu.edu.cn/2023/0816/c9634a155198/page.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023本科生资格",
+            "国赛信息填报截止",
+            "三级赛制"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        },
+        {
+          "id": "design2023-team",
+          "title": "汕头大学2023计算机设计大赛组织通知",
+          "url": "https://eng.stu.edu.cn/info/1081/3030.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023各类别人数",
+            "同校组队"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        },
+        {
+          "id": "design2023-mode",
+          "title": "西华大学2023计算机设计大赛国赛参赛报道",
+          "url": "https://xkjs.xhu.edu.cn/07/03/c6095a198403/page.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023年7至8月国赛线上举办"
+          ],
+          "accessNote": "高校官网搜索索引正文可读；本机直连本轮超时。"
+        }
+      ]
+    },
+    {
+      "id": "gplt",
+      "catalogNumber": 26,
+      "parentCatalogNo": 26,
+      "catalogName": "中国高校计算机大赛-①大数据挑战赛、②团体程序设计天梯赛、③移动应用创新赛、④网络技术挑战赛、⑤人工智能创意赛",
+      "name": "中国高校计算机大赛 · 天梯赛",
+      "category": "算法编程",
+      "summary": "个人独立解题并累计团队成绩，覆盖基础到进阶程序设计。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023本科生参加华山论剑或珠峰争鼎组；由所属高校统一组织报名。",
+      "teamFormat": "个人+团队",
+      "teamSize": "每队最多10名学生；个人独立解题、团体计分",
+      "deliveryMode": "线上＋线下同时举行（2023第八届）",
+      "courses": [
+        "程序设计",
+        "数据结构",
+        "算法设计"
+      ],
+      "courseRelation": [
+        {
+          "course": "程序设计",
+          "use": "训练规范输入输出和程序调试。"
+        },
+        {
+          "course": "数据结构",
+          "use": "用基础结构表达并处理数据。"
+        },
+        {
+          "course": "算法设计",
+          "use": "设计高效解法并判断复杂度。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "独立解题",
+        "团体计分",
+        "分层题目"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第八届团体程序设计天梯赛",
+        "start": "2022-11-20",
+        "end": "2023-03-26",
+        "status": "complete",
+        "windowText": "2022年11月20日—2023年3月26日（2023第八届）。",
+        "note": "由高校管理员报名；各校内部选拔与收表日期可能更早，不替代本全国记录。",
+        "months": [
+          11,
+          12,
+          1,
+          2,
+          3
+        ],
+        "sourceIds": [
+          "gplt2023"
+        ],
+        "scope": "全国对应赛道"
+      },
+      "officialUrl": "https://gplt.patest.cn/",
+      "evidence": [
+        {
+          "id": "gplt2023",
+          "title": "哈尔滨工程大学转载2023第八届天梯赛规程",
+          "url": "https://qihang.hrbeu.edu.cn/2023/0321/c959a304841/page.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023跨年报名窗口",
+            "最多10人",
+            "本科组别"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        },
+        {
+          "id": "gplt2023-mode",
+          "title": "成都大学2023天梯赛通知",
+          "url": "https://jw.cdu.edu.cn/info/1039/10617.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023线上线下形式"
+          ],
+          "accessNote": "只采用全国赛事形式；该页3月15日校内报名截止不作为全国窗口。"
+        }
+      ]
+    },
+    {
+      "id": "lanqiao",
+      "catalogNumber": 27,
+      "parentCatalogNo": 27,
+      "catalogName": "蓝桥杯全国软件和信息技术专业人才大赛",
+      "name": "蓝桥杯 · 软件赛",
+      "category": "算法编程",
+      "summary": "面向个人的软件编程竞赛，在限时任务中应用语言与算法。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "第14届软件个人赛：正式全日制在籍学生，按本科／研究生／高职及所选科目组别报名。",
+      "teamFormat": "个人",
+      "teamSize": "1人；本卡仅涵盖软件个人赛",
+      "deliveryMode": "2023省赛线上与线下结合；按准考证安排",
+      "courses": [
+        "程序设计",
+        "数据结构",
+        "算法设计"
+      ],
+      "courseRelation": [
+        {
+          "course": "程序设计",
+          "use": "熟练使用所选语言并处理边界情况。"
+        },
+        {
+          "course": "数据结构",
+          "use": "组织序列、集合、树和图数据。"
+        },
+        {
+          "course": "算法设计",
+          "use": "设计枚举、搜索与动态规划解法。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "个人编程",
+        "语言实践",
+        "算法"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "第十四届／2023赛季软件个人赛",
+        "start": "2022-10-10",
+        "end": "2022-12-16",
+        "status": "complete",
+        "windowText": "原报名期：2022年10月10日—12月16日（2023赛季）。",
+        "note": "另有2023年3月20日后续报名截止记录，补报名起日未核实；不能把两段合成持续开放窗口。",
+        "months": [
+          10,
+          11,
+          12
+        ],
+        "sourceIds": [
+          "lanqiao2023-rules",
+          "lanqiao2023-followup"
+        ],
+        "scope": "全国对应赛道",
+        "additionalWindows": [
+          {
+            "start": null,
+            "end": "2023-03-20",
+            "status": "partial",
+            "label": "后续报名截止，起日未核实",
+            "sourceId": "lanqiao2023-followup"
+          }
+        ]
+      },
+      "officialUrl": "https://dasai.lanqiao.cn/",
+      "evidence": [
+        {
+          "id": "lanqiao2023-rules",
+          "title": "第十四届蓝桥杯个人赛章程（组委会原件，高校保存）",
+          "url": "https://jwc.ustb.edu.cn/docs//2023-03/ee38193489fe48729ea3e1a9964b03f6.pdf",
+          "accessed": "2026-11-05",
+          "type": "official-document",
+          "supports": [
+            "2023赛季原报名窗口",
+            "个人赛与组别"
+          ],
+          "accessNote": "已下载组委会2022-09-23落款PDF。"
+        },
+        {
+          "id": "lanqiao2023-followup",
+          "title": "北京科技大学2023-03-15第十四届蓝桥杯报名通知",
+          "url": "https://jwc.ustb.edu.cn/tztg/3dec3bf0f48d4e50aaa4b940dc5bfb7d.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "后续软件与电子赛报名截止2023-03-20"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        },
+        {
+          "id": "lanqiao2023-mode",
+          "title": "蓝桥杯组委会字〔2023〕1号个人赛省赛时间通知",
+          "url": "https://x-static.lanqiao.cn/upload/202301/courseimg/1af31d3a-bcd2-4697-a8e1-3a4c7e741094.pdf",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "2023省赛线上线下结合"
+          ],
+          "accessNote": "已下载官方PDF。"
+        }
+      ]
+    },
+    {
+      "id": "ciscn",
+      "catalogNumber": 33,
+      "parentCatalogNo": 33,
+      "catalogName": "全国大学生信息安全竞赛",
+      "name": "全国大学生信息安全竞赛 · 作品赛",
+      "category": "网络安全",
+      "summary": "自主选题并实现信息安全作品，通过文档和演示解释技术方案。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023作品赛面向具有正式学籍的全日制在校大学生；同校组队，每名学生只能参加一队。",
+      "teamFormat": "团队",
+      "teamSize": "不超过4名学生＋1名指导教师",
+      "deliveryMode": "线上作品提交、初评＋线下决赛会评",
+      "courses": [
+        "信息安全",
+        "计算机网络",
+        "操作系统",
+        "密码学"
+      ],
+      "courseRelation": [
+        {
+          "course": "信息安全",
+          "use": "建立威胁模型并设计防护或检测方案。"
+        },
+        {
+          "course": "计算机网络",
+          "use": "理解协议、网络流量与攻击面。"
+        },
+        {
+          "course": "操作系统",
+          "use": "理解权限、进程与系统安全机制。"
+        },
+        {
+          "course": "密码学",
+          "use": "在合适的场景中选用加密和认证机制。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "安全作品",
+        "原创设计",
+        "技术报告"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十六届·作品赛",
+        "start": "2023-04-07",
+        "end": "2023-06-14",
+        "status": "complete",
+        "windowText": "2023年4月7日—6月14日24:00（含官方延期）。",
+        "note": "原报名截止6月12日；6月13日公告因系统故障延至6月14日。作品提交截止6月15日，不是报名截止。",
+        "months": [
+          4,
+          5,
+          6
+        ],
+        "sourceIds": [
+          "ciscn2023",
+          "ciscn2023-extension"
+        ],
+        "scope": "全国对应赛道"
+      },
+      "officialUrl": "https://www.ciscn.cn/",
+      "evidence": [
+        {
+          "id": "ciscn2023",
+          "title": "第十六届全国大学生信息安全竞赛作品赛官方通知",
+          "url": "https://www.ciscn.cn/announcement/view/282",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "2023原报名起止",
+            "同校≤4学生",
+            "线上初评与线下会评"
+          ],
+          "accessNote": "官方公告搜索索引可读；直连访问不稳定。"
+        },
+        {
+          "id": "ciscn2023-extension",
+          "title": "2023-06-13关于延长第十六届作品赛报名和作品提交时间的通知",
+          "url": "https://www.ciscn.cn/announcement?page=12",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "报名延期至2023-06-14 24:00"
+          ],
+          "accessNote": "官方公告列表搜索索引核读全文；直连列表TLS/超时，未声称单篇直连成功。"
+        }
+      ]
+    },
+    {
+      "id": "software-cup",
+      "catalogNumber": 38,
+      "parentCatalogNo": 38,
+      "catalogName": "“中国软件杯”大学生软件设计大赛",
+      "name": "“中国软件杯”大学生软件设计大赛",
+      "category": "工程开发",
+      "summary": "围绕产业题目交付软件作品，兼顾实现、质量和说明材料。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第12届面向普通高校全日制在籍学生；本科等按A组题目要求参赛，高职高专按B组要求。",
+      "teamFormat": "团队",
+      "teamSize": "学生最多4人，另1名指导教师（2023第12届）",
+      "deliveryMode": "线上提交作品和初赛评审＋现场决赛",
+      "courses": [
+        "软件工程",
+        "程序设计",
+        "数据库",
+        "软件测试"
+      ],
+      "courseRelation": [
+        {
+          "course": "软件工程",
+          "use": "拆解需求、分配任务并管理版本。"
+        },
+        {
+          "course": "程序设计",
+          "use": "实现业务逻辑与系统接口。"
+        },
+        {
+          "course": "数据库",
+          "use": "设计存储、索引和数据访问。"
+        },
+        {
+          "course": "软件测试",
+          "use": "构造测试场景并检验功能与性能。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "产业题目",
+        "软件交付",
+        "团队开发"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十二届",
+        "start": "2023-03-22",
+        "end": "2023-06-15",
+        "status": "complete",
+        "windowText": "2023年3月22日—6月15日。",
+        "note": "作品提交截止另为6月30日15:00，不用作品截止代替报名截止。",
+        "months": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "sourceIds": [
+          "software2023",
+          "software2023-pdf"
+        ],
+        "scope": "全国对应赛道"
+      },
+      "officialUrl": "https://www.cnsoftbei.com/",
+      "evidence": [
+        {
+          "id": "software2023",
+          "title": "青岛科技大学第十二届中国软件杯正式通知",
+          "url": "https://xk.qust.edu.cn/info/1047/3559.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023报名窗口",
+            "含教师最多5人的团队规则",
+            "线上作品提交"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        },
+        {
+          "id": "software2023-pdf",
+          "title": "第十二届中国软件杯通知原件（南京信息工程大学保存）",
+          "url": "https://webs.nuist.edu.cn/_upload/article/files/00/69/3d0790bc4ce79388a026859c98b4/ef4dd772-3ba6-4c62-92cf-d4c0de512784.pdf",
+          "accessed": "2026-11-05",
+          "type": "official-document",
+          "supports": [
+            "2023报名起止",
+            "赛程"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        },
+        {
+          "id": "software2023-final",
+          "title": "长春工业大学第十二届中国软件杯参赛报道",
+          "url": "https://jsjxy.ccut.edu.cn/info/1108/2369.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023南京现场决赛"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        }
+      ]
+    },
+    {
+      "id": "huawei-ict",
+      "catalogNumber": 42,
+      "parentCatalogNo": 42,
+      "catalogName": "华为ICT大赛",
+      "name": "华为 ICT 大赛 · 实践赛",
+      "category": "工程开发",
+      "summary": "在网络、云与计算技术场景中运用理论知识和实验技能。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2022–2023第7届实践赛面向高校本科及高职等在校学生，具体组别和赛区按当届通知。",
+      "teamFormat": "个人+团队",
+      "teamSize": "初赛个人；晋级后同校3名学生＋1名导师",
+      "deliveryMode": "初赛形式依赛区；2023全球总决赛为线下",
+      "courses": [
+        "计算机网络",
+        "操作系统",
+        "云计算"
+      ],
+      "courseRelation": [
+        {
+          "course": "计算机网络",
+          "use": "分析网络拓扑、路由和连通性。"
+        },
+        {
+          "course": "操作系统",
+          "use": "理解系统服务、进程和资源管理。"
+        },
+        {
+          "course": "云计算",
+          "use": "部署并管理虚拟化与云服务环境。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "ICT",
+        "理论与实验",
+        "系统实践"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "第七届／2022–2023赛季实践赛",
+        "start": null,
+        "end": null,
+        "status": "unknown",
+        "windowText": "2023赛季：未核实全国统一报名窗口；各赛区分别安排。",
+        "note": "可核历史样例：四川省赛2022-10-20至11-20；此省赛窗口不能替代其他地区期限，故全国字段保持未知。",
+        "months": [],
+        "sourceIds": [
+          "huawei2023-sichuan"
+        ],
+        "scope": "全国对应赛道"
+      },
+      "officialUrl": "https://www.huawei.com/cn/talent/ict-academy/",
+      "evidence": [
+        {
+          "id": "huawei2023-rules",
+          "title": "长江师范学院2022–2023第七届华为ICT实践赛通知",
+          "url": "https://jwc.yznu.edu.cn/2022/1028/c1802a211909/page.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "第7届个人与团体赛制",
+            "团队人数"
+          ],
+          "accessNote": "不把该校热身赛报名或线下笔试要求泛化为全国规则。"
+        },
+        {
+          "id": "huawei2023-sichuan",
+          "title": "四川大学关于2022–2023华为ICT四川省实践赛报名通知",
+          "url": "https://jwc.scu.edu.cn/info/1043/7471.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "四川省赛2022-10-20至11-20记录",
+            "省赛同校3人"
+          ],
+          "accessNote": "此窗口仅适用四川省赛，因此未填入全国窗口日期字段。"
+        },
+        {
+          "id": "huawei2023-final",
+          "title": "华为ICT大赛2022–2023全球总决赛获奖名单揭晓",
+          "url": "https://www.huawei.com/cn/news/2023/5/ict-competition-globalfinal/",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "第7届2023全球总决赛为线下"
+          ],
+          "accessNote": "已读取华为2023-05-27正式新闻。"
+        }
+      ]
+    },
+    {
+      "id": "embedded",
+      "catalogNumber": 43,
+      "parentCatalogNo": 43,
+      "catalogName": "全国大学生嵌入式芯片与系统设计竞赛",
+      "name": "全国大学生嵌入式芯片与系统设计竞赛 · 应用赛道",
+      "category": "硬件系统",
+      "summary": "基于芯片或开发平台构建应用系统，完成软硬件协同设计。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第6届面向高校相关专业学生；本科、研究生、高职高专按组别参赛，有研究生成员即研究生队。",
+      "teamFormat": "团队",
+      "teamSize": "1–3名学生＋不超过2名指导教师",
+      "deliveryMode": "线上初评＋线下全国总决赛；部分分赛区复赛转线上",
+      "courses": [
+        "数字逻辑",
+        "嵌入式系统",
+        "计算机组成",
+        "C语言程序设计"
+      ],
+      "courseRelation": [
+        {
+          "course": "数字逻辑",
+          "use": "理解逻辑电路、时序和数字接口。"
+        },
+        {
+          "course": "嵌入式系统",
+          "use": "实现驱动、任务调度和外设交互。"
+        },
+        {
+          "course": "计算机组成",
+          "use": "理解处理器、存储和总线配合。"
+        },
+        {
+          "course": "C语言程序设计",
+          "use": "编写底层控制与数据处理程序。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "芯片应用",
+        "系统联调",
+        "开发板"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第六届·芯片应用赛道",
+        "start": null,
+        "end": "2023-03-30",
+        "status": "partial",
+        "windowText": "2023年2月下旬—3月30日；精确起日未核实。",
+        "note": "来源只写“2月下旬”，不擅自换成某一天；故保留partial，不生成完整月份区间。",
+        "months": [],
+        "sourceIds": [
+          "embedded2023",
+          "embedded2023-university"
+        ],
+        "scope": "全国对应赛道"
+      },
+      "officialUrl": "https://www.socchina.net/",
+      "evidence": [
+        {
+          "id": "embedded2023",
+          "title": "STMCU官网2023第六届嵌入式竞赛专题",
+          "url": "https://www.stmcu.com.cn/contest/574",
+          "accessed": "2026-11-05",
+          "type": "partner",
+          "supports": [
+            "2023应用赛道报名时间",
+            "≤3名学生及组别",
+            "题目与平台"
+          ],
+          "accessNote": "官方赛道合作企业专题；已直接读取2023赛事段落，页面其余当前导航不作历史依据。"
+        },
+        {
+          "id": "embedded2023-university",
+          "title": "哈尔滨工业大学（深圳）第六届嵌入式应用赛道报名通知",
+          "url": "https://due.hitsz.edu.cn/info/1485/4865.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023应用赛道报名资格审核期",
+            "团队参赛"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        },
+        {
+          "id": "embedded2023-final",
+          "title": "河南工学院第六届嵌入式应用赛道参赛报道",
+          "url": "https://dqx.hait.edu.cn/info/1226/6938.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023网评初赛",
+            "南京现场演示和答辩"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        },
+        {
+          "id": "embedded2023-south",
+          "title": "嵌入式竞赛官网2023-07-26南部赛区转线上答辩通知列表",
+          "url": "https://www.socchina.net/wx/inform?value=3",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "2023南部赛区复赛转线上"
+          ],
+          "accessNote": "已核读官方历史通知标题与日期，不能把所有分赛区概括为线下。"
+        }
+      ]
+    },
+    {
+      "id": "baidu-star",
+      "catalogNumber": 58,
+      "parentCatalogNo": 58,
+      "catalogName": "百度之星·程序设计大赛",
+      "name": "百度之星 · 程序设计大赛",
+      "category": "算法编程",
+      "summary": "以个人程序设计解题训练算法思维和实现能力。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第19届初赛允许在校生及社会人士；总决赛须具有正式全日制学籍，以报名时状态为准。",
+      "teamFormat": "个人",
+      "teamSize": "1名选手，个人赛",
+      "deliveryMode": "线上省级初赛＋线下年度总决赛",
+      "courses": [
+        "程序设计",
+        "数据结构",
+        "算法设计"
+      ],
+      "courseRelation": [
+        {
+          "course": "程序设计",
+          "use": "实现正确、可调试的解题程序。"
+        },
+        {
+          "course": "数据结构",
+          "use": "针对题目选择合适的数据组织方式。"
+        },
+        {
+          "course": "算法设计",
+          "use": "分析约束并优化时间和空间复杂度。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "算法",
+        "个人赛",
+        "程序设计"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十九届·第三场初赛",
+        "start": null,
+        "end": "2023-09-24",
+        "status": "partial",
+        "windowText": "2023第三场初赛：9月24日开赛前1小时截止，起日未核实。",
+        "note": "初赛按场次分别报名。本字段只记录第三场；第一、二场不合并为一个连续窗口。",
+        "months": [],
+        "sourceIds": [
+          "baidu2023"
+        ],
+        "scope": "2023第三场初赛"
+      },
+      "officialUrl": "https://astar.baidu.com/",
+      "evidence": [
+        {
+          "id": "baidu2023",
+          "title": "2023第十九届百度之星报名缴费通知（组委会原件，高校保存）",
+          "url": "https://jwc.zjhu.edu.cn/_upload/article/files/e0/bb/e6ab277c4cb2a13bab6c4abe8c21/111fb954-b5d8-4b7e-bb0b-c99379ed1347.pdf",
+          "accessed": "2026-11-05",
+          "type": "official-document",
+          "supports": [
+            "2023初赛分场报名截止",
+            "个人报名及资格"
+          ],
+          "accessNote": "官方原件搜索索引正文可读；本机下载本轮超时。"
+        },
+        {
+          "id": "baidu2023-final",
+          "title": "温州大学第十九届百度之星年度总决赛参赛报道",
+          "url": "https://ai.wzu.edu.cn/info/1337/11220.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023三轮省级线上初赛",
+            "2023-12-31北京线下总决赛"
+          ],
+          "accessNote": "已读取2023届历史来源正文。"
+        }
+      ]
+    },
+    {
+      "id": "system-design",
+      "catalogNumber": 63,
+      "parentCatalogNo": 63,
+      "catalogName": "全国大学生计算机系统能力大赛",
+      "name": "全国大学生计算机系统能力大赛 · 操作系统设计赛",
+      "category": "工程开发",
+      "summary": "从操作系统内核与系统功能出发，练习系统级设计和实现。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023内核实现赛道限全日制在校本科生；功能挑战赛道可含研究生；同校组队且每人限一队。",
+      "teamFormat": "团队",
+      "teamSize": "1–3名学生＋1–2名指导教师",
+      "deliveryMode": "线上代码提交与评审＋线下全国总决赛",
+      "courses": [
+        "操作系统",
+        "计算机组成",
+        "C语言程序设计",
+        "数据结构"
+      ],
+      "courseRelation": [
+        {
+          "course": "操作系统",
+          "use": "实现或分析调度、内存和文件机制。"
+        },
+        {
+          "course": "计算机组成",
+          "use": "理解指令、异常、中断与硬件接口。"
+        },
+        {
+          "course": "C语言程序设计",
+          "use": "实现系统代码并定位底层错误。"
+        },
+        {
+          "course": "数据结构",
+          "use": "管理内核对象、队列与索引。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "操作系统",
+        "系统编程",
+        "内核"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年操作系统设计赛",
+        "start": "2023-03-15",
+        "end": "2023-04-30",
+        "status": "complete",
+        "windowText": "2023年3月15日—4月30日（操作系统赛）。",
+        "note": "按所核2023章程报名安排；同目录的编译、数据库等赛项各有独立日期。",
+        "months": [
+          3,
+          4
+        ],
+        "sourceIds": [
+          "system2023"
+        ],
+        "scope": "全国对应赛道"
+      },
+      "officialUrl": "https://os.educg.net/",
+      "evidence": [
+        {
+          "id": "system2023",
+          "title": "常州大学转载2023计算机系统能力大赛操作系统设计赛章程",
+          "url": "https://cxcy.cczu.edu.cn/2023/1102/c6908a344698/page.htm",
+          "accessed": "2026-11-05",
+          "type": "university",
+          "supports": [
+            "2023操作系统赛报名起止",
+            "同校1–3人和资格",
+            "开源代码与文档要求"
+          ],
+          "accessNote": "已直接读取“2023年…操作系统设计赛”小节；未混用同页编译赛3/24–5/15窗口。"
+        },
+        {
+          "id": "system2023-final",
+          "title": "中山大学承办2023全国大学生计算机系统能力大赛总决赛报道",
+          "url": "https://www.sysu.edu.cn/news/info/2161/1057131.htm",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "2023操作系统等赛道线下联合总决赛"
+          ],
+          "accessNote": "承办高校正式报道，明确本届首次线下多个赛道总决赛联合举行。"
+        }
+      ]
+    },
+    {
+      "id": "iot",
+      "catalogNumber": 65,
+      "parentCatalogNo": 65,
+      "catalogName": "全国大学生物联网设计竞赛",
+      "name": "全国大学生物联网设计竞赛",
+      "category": "硬件系统",
+      "summary": "围绕真实应用连接传感、网络与服务端，并展示完整系统。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第10届面向高校全日制在校本科生、研究生等；可同校混合组队，不允许跨校。",
+      "teamFormat": "团队",
+      "teamSize": "不超过4名学生＋不超过2名指导教师",
+      "deliveryMode": "线上初评＋决赛作品展示与答辩；具体场次形式见2023通知",
+      "courses": [
+        "物联网技术",
+        "嵌入式系统",
+        "计算机网络",
+        "数据库"
+      ],
+      "courseRelation": [
+        {
+          "course": "物联网技术",
+          "use": "设计感知、传输和应用之间的整体方案。"
+        },
+        {
+          "course": "嵌入式系统",
+          "use": "采集传感器数据并控制终端设备。"
+        },
+        {
+          "course": "计算机网络",
+          "use": "实现设备联网与数据通信。"
+        },
+        {
+          "course": "数据库",
+          "use": "保存设备数据并支持查询分析。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "物联网",
+        "原型系统",
+        "应用设计"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十届",
+        "start": "2023-04-15",
+        "end": "2023-06-15",
+        "status": "complete",
+        "windowText": "2023年4月15日—6月15日。",
+        "note": "完整方案与演示视频提交为6月1日—7月25日，这是作品阶段，不是报名阶段。",
+        "months": [
+          4,
+          5,
+          6
+        ],
+        "sourceIds": [
+          "iot2023"
+        ],
+        "scope": "全国对应赛道"
+      },
+      "officialUrl": "https://iot.sjtu.edu.cn/",
+      "evidence": [
+        {
+          "id": "iot2023",
+          "title": "2023年全国大学生物联网设计竞赛章程",
+          "url": "https://iot.sjtu.edu.cn/ueditor/net/upload/file/20230324/6381524671178308198103582.pdf",
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "supports": [
+            "2023报名起止",
+            "同校≤4人",
+            "线上预赛和决赛形式"
+          ],
+          "accessNote": "已下载官方PDF全文；章程为疫情条件保留决赛线上/线下安排。"
+        }
+      ]
+    },
+    {
+      "id": "siemens-cimc",
+      "catalogNumber": 23,
+      "parentCatalogNo": 23,
+      "catalogName": "“西门子杯”中国智能制造挑战赛",
+      "name": "“西门子杯”中国智能制造挑战赛",
+      "category": "工程开发",
+      "summary": "围绕工业控制、数字化产线和智能制造任务，把工程方案转为可验证的系统。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023届面向控制、电子信息、计算机等相关专业在校本科生、研究生及高职高专学生；本科组含研究生，研究生人数按赛项限制。",
+      "teamFormat": "团队",
+      "teamSize": "1—3名学生、1—2名指导教师",
+      "deliveryMode": "工程设计应用与创新研发分赛项，分区初赛后进入全国总决赛；实施、仿真、测试和答辩按赛项安排",
+      "courses": [
+        "自动控制",
+        "计算机网络",
+        "嵌入式系统",
+        "软件工程"
+      ],
+      "courseRelation": [
+        {
+          "course": "自动控制",
+          "use": "构建工业过程和运动控制策略。"
+        },
+        {
+          "course": "计算机网络",
+          "use": "组织工业设备通信与信息交换。"
+        },
+        {
+          "course": "嵌入式系统",
+          "use": "实现控制器与外设协作。"
+        },
+        {
+          "course": "软件工程",
+          "use": "完成需求分析、方案实现和验证。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "智能制造",
+        "工业控制",
+        "系统工程"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十七届CIMC“西门子杯”中国智能制造挑战赛",
+        "start": "2023-03-01",
+        "end": "2023-05-31",
+        "status": "complete",
+        "windowText": "2023年3月1日—5月31日。",
+        "sourceIds": [
+          "siemens2023launch",
+          "siemens2023rules"
+        ],
+        "note": "全国官方开赛通知给出的官网注册、组队报名窗口；校内组织时间可能不同。",
+        "months": [
+          3,
+          4,
+          5
+        ],
+        "scope": "2023全国官网注册组队"
+      },
+      "officialUrl": "https://www.siemenscup-cimc.org.cn/",
+      "evidence": [
+        {
+          "id": "siemens2023launch",
+          "title": "关于开展2023年第十七届CIMC“西门子杯”中国智能制造挑战赛的通知",
+          "url": "https://www.siemenscup-cimc.org.cn/notice/NoticeDetail?id=1266",
+          "supports": [
+            "2023赛事存在",
+            "3月1日至5月31日报名"
+          ],
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "note": "主办赛事官网2023年3月1日通知。",
+          "accessNote": "主办赛事官网2023年3月1日通知。"
+        },
+        {
+          "id": "siemens2023rules",
+          "title": "教育部2023年第十七届CIMC“西门子杯”中国智能制造挑战赛竞赛简介",
+          "url": "https://gpzx.hfut.edu.cn/_upload/article/files/de/8b/007362e84a8fb6846dd14f6a2ae4/5714f158-9afc-406b-9ed7-3d9f8c4b7ebd.pdf",
+          "supports": [
+            "计算机等专业本科生资格",
+            "1—3人团队",
+            "赛项分类及赛制",
+            "全国报名窗口"
+          ],
+          "accessed": "2026-11-05",
+          "type": "university-reprint",
+          "note": "官方竞赛简介PDF，由合肥工业大学工程实践中心保存；不把文件的A类宣传口径替代各校认定。",
+          "accessNote": "官方竞赛简介PDF，由合肥工业大学工程实践中心保存；不把文件的A类宣传口径替代各校认定。"
+        }
+      ]
+    },
+    {
+      "id": "opto-design",
+      "catalogNumber": 30,
+      "parentCatalogNo": 30,
+      "catalogName": "全国大学生光电设计竞赛",
+      "name": "全国大学生光电设计竞赛",
+      "category": "硬件系统",
+      "summary": "将光学测量与嵌入式控制结合，设计非接触测量装置或自主寻路小车。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023年暑期前具有正式学籍的全日制本科、专科、留学生及研究生可参赛；可跨学科组队，研究生每队不超过1人且不能任队长。",
+      "teamFormat": "团队",
+      "teamSize": "3名学生、最多2名指导教师（2023年4月28日全国通知）",
+      "deliveryMode": "分赛区选拔，国赛实物竞技与展示、答辩；2023主赛题为非接触酒精浓度测量和迷宫寻宝光电智能小车",
+      "courses": [
+        "嵌入式系统",
+        "自动控制",
+        "计算机视觉",
+        "C语言程序设计"
+      ],
+      "courseRelation": [
+        {
+          "course": "嵌入式系统",
+          "use": "采集光电信号并组织传感、执行系统。"
+        },
+        {
+          "course": "自动控制",
+          "use": "设计小车运动与测量装置控制策略。"
+        },
+        {
+          "course": "计算机视觉",
+          "use": "处理视觉或光学传感信息。"
+        },
+        {
+          "course": "C语言程序设计",
+          "use": "实现采样、计算与设备联动。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "光电测量",
+        "智能小车",
+        "传感"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十一届全国大学生光电设计竞赛",
+        "start": null,
+        "end": null,
+        "status": "unknown",
+        "windowText": "2023报名时间由各赛区另行通知，尚未核实统一起止日。",
+        "sourceIds": [
+          "opto2023notice"
+        ],
+        "note": "全国通知要求由各赛区通知网络报名；8月10日是区赛向国赛推荐项目截止，并非面向学生的统一报名截止，因此未填入日期。",
+        "months": [],
+        "scope": "2023主赛道各赛区分别报名"
+      },
+      "officialUrl": "https://gd.p.moocollege.com/",
+      "evidence": [
+        {
+          "id": "opto2023notice",
+          "title": "关于第十一届全国大学生光电设计竞赛的通知〔2023〕1号",
+          "url": "https://xspace.njust.edu.cn/_upload/article/files/12/eb/22d41d4248b2b09d8961513fb425/b82079db-56f2-4e4f-b82b-1b73ab145831.pdf",
+          "supports": [
+            "2023赛事与两项主赛题",
+            "本科生等资格",
+            "3人团队与研究生限制",
+            "赛区负责报名、国赛实物与答辩"
+          ],
+          "accessed": "2026-11-05",
+          "type": "university-reprint",
+          "note": "全国竞赛组委会2023年4月28日原始通知，由南京理工大学保存；按此较晚全国通知采用3人规则，不采用部分早期校内页面的2—7人表述。",
+          "accessNote": "全国竞赛组委会2023年4月28日原始通知，由南京理工大学保存；按此较晚全国通知采用3人规则，不采用部分早期校内页面的2—7人表述。"
+        },
+        {
+          "id": "opto2023portal",
+          "title": "全国大学生光电设计竞赛（2023赛事介绍）",
+          "url": "https://cxcy.lut.edu.cn/info/1053/1577.htm",
+          "supports": [
+            "2023官网入口"
+          ],
+          "accessed": "2026-11-05",
+          "type": "university",
+          "note": "兰州理工大学2023年4月1日页面给出官方平台地址；仅用于入口，不取其中通用举办时间作为报名日期。",
+          "accessNote": "兰州理工大学2023年4月1日页面给出官方平台地址；仅用于入口，不取其中通用举办时间作为报名日期。"
+        }
+      ]
+    },
+    {
+      "id": "ciciec",
+      "catalogNumber": 31,
+      "parentCatalogNo": 31,
+      "catalogName": "全国大学生集成电路创新创业大赛",
+      "name": "全国大学生集成电路创新创业大赛",
+      "category": "硬件系统",
+      "summary": "围绕芯片和系统杯赛题目完成设计、验证与答辩，理解集成电路工程流程。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023届面向电子、信息、计算机、自动化等集成电路相关专业在校专科生、本科生及研究生；全为本科及以下的团队进入A组，可跨校组队。",
+      "teamFormat": "团队",
+      "teamSize": "1—3名学生、1—2名指导教师；每人限1队，每队选1个杯赛",
+      "deliveryMode": "线上作品初评、分赛区决赛与全国总决赛；可选校内选拔，具体杯赛形式按题目要求",
+      "courses": [
+        "数字逻辑",
+        "计算机组成",
+        "嵌入式系统",
+        "C语言程序设计"
+      ],
+      "courseRelation": [
+        {
+          "course": "数字逻辑",
+          "use": "描述组合逻辑、时序逻辑与数字模块。"
+        },
+        {
+          "course": "计算机组成",
+          "use": "理解数据通路、指令与片上系统结构。"
+        },
+        {
+          "course": "嵌入式系统",
+          "use": "开展芯片接口和系统级验证。"
+        },
+        {
+          "course": "C语言程序设计",
+          "use": "开发测试程序与软硬件协同功能。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "集成电路",
+        "芯片设计",
+        "验证"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第七届全国大学生集成电路创新创业大赛",
+        "start": null,
+        "end": "2023-03-31",
+        "status": "partial",
+        "windowText": "2023年1月开始（具体日未核实），延期后3月31日23:59截止。",
+        "sourceIds": [
+          "ciciec2023notice",
+          "ciciec2023extend"
+        ],
+        "note": "初始通知只写1月开始，不擅自补成1月1日。官网3月10日延期通知将原3月15日截止改为3月31日；5月31日是作品提交截止，不是报名截止。",
+        "months": [],
+        "scope": "2023第七届报名，采用延期后的截止"
+      },
+      "officialUrl": "https://univ.ciciec.com/",
+      "evidence": [
+        {
+          "id": "ciciec2023notice",
+          "title": "关于举办2023年第七届全国大学生集成电路创新创业大赛的通知（工信人才〔2023〕1号）",
+          "url": "https://aao.nuaa.edu.cn/_upload/article/files/a3/9b/2b72c9a84696a08074eedb8629ad/a8550710-0cd1-4944-92d2-b02c1c1a0c3d.pdf",
+          "supports": [
+            "计算机等本科生资格",
+            "A/B分组与1—3人团队",
+            "初赛、分区和国赛",
+            "原始报名月份与截止"
+          ],
+          "accessed": "2026-11-05",
+          "type": "university-reprint",
+          "note": "工业和信息化部人才交流中心原始通知，由南京航空航天大学保存；正文报名起点仅到月份。",
+          "accessNote": "工业和信息化部人才交流中心原始通知，由南京航空航天大学保存；正文报名起点仅到月份。"
+        },
+        {
+          "id": "ciciec2023extend",
+          "title": "关于延迟第七届集创赛报名截止时间的通知（官网2023年3月10日公告）",
+          "url": "https://univ.ciciec.com/nr.jsp?g=2",
+          "supports": [
+            "报名截止延期至2023年3月31日23:59"
+          ],
+          "accessed": "2026-11-05",
+          "type": "organizer",
+          "note": "官网重要通知列表保留该公告全文摘要；精确单篇链接未取到，列表可检索标题和日期。",
+          "accessNote": "官网重要通知列表保留该公告全文摘要；精确单篇链接未取到，列表可检索标题和日期。"
+        }
+      ]
+    },
+    {
+      "id": "robocup-china",
+      "catalogNumber": 37,
+      "parentCatalogNo": 37,
+      "catalogName": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+      "name": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+      "category": "硬件系统",
+      "summary": "以自主机器人完成搬运、服务、探索等任务，联调感知、规划和运动控制。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023专项赛有高校本科生参赛渠道；队伍需通过在线技术资格审核后参加线下赛，各赛项资格及人数分别执行当届规则。",
+      "teamFormat": "团队",
+      "teamSize": "按具体赛项规则确定；已核读2023专项赛总通知未给统一学生人数",
+      "deliveryMode": "在线技术资格认证后进行线下专项赛，择优晋级当年度全国总决赛",
+      "courses": [
+        "嵌入式系统",
+        "自动控制",
+        "计算机视觉",
+        "算法设计"
+      ],
+      "courseRelation": [
+        {
+          "course": "嵌入式系统",
+          "use": "集成传感器、控制器与执行设备。"
+        },
+        {
+          "course": "自动控制",
+          "use": "改善行走、抓取及搬运的稳定性。"
+        },
+        {
+          "course": "计算机视觉",
+          "use": "识别目标并估计机器人环境状态。"
+        },
+        {
+          "course": "算法设计",
+          "use": "实现导航、任务规划与策略选择。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "机器人",
+        "自主导航",
+        "感知控制"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023中国机器人大赛暨RoboCup机器人世界杯中国赛·专项赛",
+        "start": "2023-06-10",
+        "end": "2023-06-30",
+        "status": "complete",
+        "windowText": "2023专项赛：6月10日—6月30日24:00。",
+        "sourceIds": [
+          "robocup2023special"
+        ],
+        "note": "此窗口只适用于北京专项赛，不能覆盖同目录下全部赛区/项目；7月10日是审核通过后的缴费确认期限，8月24—26日是比赛日期。",
+        "months": [
+          6
+        ],
+        "scope": "2023北京专项赛，非全赛事统一日期"
+      },
+      "officialUrl": "https://rcccaa.drct-caa.org.cn/",
+      "evidence": [
+        {
+          "id": "robocup2023special",
+          "title": "2023中国机器人大赛暨RoboCup机器人世界杯中国赛专项赛通知",
+          "url": "https://cmee.cczu.edu.cn/_upload/article/files/d3/61/dbe6a24e4c9c9c8e9cbb4aff31e7/2410ccbc-5a1b-44fc-b980-bf54edd3ab9c.pdf",
+          "supports": [
+            "2023专项赛存在与机器人赛项",
+            "6月10日至30日报名",
+            "在线资格审核、线下竞赛与晋级"
+          ],
+          "accessed": "2026-11-05",
+          "type": "university-reprint",
+          "note": "中国自动化学会原始通知，由常州大学保存；严格保留专项赛范围。",
+          "accessNote": "中国自动化学会原始通知，由常州大学保存；严格保留专项赛范围。"
+        },
+        {
+          "id": "robocup2023undergrad",
+          "title": "关于开展2023年RoboCup机器人大赛专项赛校级选拔赛的通知",
+          "url": "https://jwc.zjhzu.edu.cn/2023/0625/c661a19899/page.htm",
+          "supports": [
+            "本科生可以参赛",
+            "对应2023专项赛的机器人任务",
+            "专项赛与校内日期区别"
+          ],
+          "accessed": "2026-11-05",
+          "type": "university",
+          "note": "湖州学院教务处及校赛组委会官方通知，证明本科生参赛路径；校内6月29日截止未作为全国日期。",
+          "accessNote": "湖州学院教务处及校赛组委会官方通知，证明本科生参赛路径；校内6月29日截止未作为全国日期。"
+        }
+      ]
+    },
+    {
+      "id": "raicom",
+      "catalogNumber": 40,
+      "parentCatalogNo": 40,
+      "catalogName": "睿抗机器人开发者大赛（RAICOM）",
+      "name": "睿抗机器人开发者大赛（RAICOM）",
+      "category": "工程开发",
+      "summary": "按编程、机器人竞技或工程创客赛道，将算法与应用原型转化为可展示的解决方案。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023省赛通知面向普通高校在校本科生、高职高专学生；其他学历和资格细节因赛道而异，应核对所选赛项。",
+      "teamFormat": "个人／团队",
+      "teamSize": "依赛道规则；2023同济通知列个人或不超过5人团队、1—2名指导教师，其他赛道人数待逐项核实",
+      "deliveryMode": "省赛选拔后进入国赛，编程、作品评审和机器人竞技分赛道实施，线上线下按赛项安排",
+      "courses": [
+        "程序设计",
+        "软件工程",
+        "嵌入式系统",
+        "计算机视觉"
+      ],
+      "courseRelation": [
+        {
+          "course": "程序设计",
+          "use": "实现赛题算法与应用功能。"
+        },
+        {
+          "course": "软件工程",
+          "use": "整理需求、分工、集成与测试过程。"
+        },
+        {
+          "course": "嵌入式系统",
+          "use": "连接机器人或物联网硬件模块。"
+        },
+        {
+          "course": "计算机视觉",
+          "use": "构建识别、检测与感知处理模块。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "机器人开发",
+        "编程",
+        "工程创客"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023睿抗机器人开发者大赛（RAICOM）省赛",
+        "start": "2023-03-01",
+        "end": "2023-05-31",
+        "status": "complete",
+        "windowText": "2023省赛报名：3月1日—5月31日。",
+        "sourceIds": [
+          "raicom2023prov"
+        ],
+        "note": "采用省赛通知所列统一报名窗口；同济校内5月21日及其他学校动员日期未替代该窗口。不同赛道后续晋级报名、作品提交与补报另有安排。",
+        "months": [
+          3,
+          4,
+          5
+        ],
+        "scope": "2023 CAIA/CAIP/CAIR/CAIM省赛报名通知口径"
+      },
+      "officialUrl": "https://www.robocom.com.cn/",
+      "evidence": [
+        {
+          "id": "raicom2023prov",
+          "title": "关于举办2023睿抗机器人开发者大赛（RAICOM）省赛的通知",
+          "url": "https://jdetc.jhun.edu.cn/7f/f1/c3462a163825/pagem.htm",
+          "supports": [
+            "2023四大赛道",
+            "普通高校本科生资格",
+            "3月1日至5月31日报名",
+            "省赛晋级安排"
+          ],
+          "accessed": "2026-11-05",
+          "type": "university-reprint",
+          "note": "江汉大学工程训练中心完整转载赛事省赛通知，正文列全国承办高校及各省安排，不是单校报名通知。",
+          "accessNote": "江汉大学工程训练中心完整转载赛事省赛通知，正文列全国承办高校及各省安排，不是单校报名通知。"
+        },
+        {
+          "id": "raicom2023team",
+          "title": "2023睿抗机器人开发者大赛校内报名通知",
+          "url": "https://ci.tongji.edu.cn/8c/59/c30674a298073/page.htm",
+          "supports": [
+            "本科生参赛",
+            "个人或不超过5人团队示例",
+            "作品材料与分赛道规则"
+          ],
+          "accessed": "2026-11-05",
+          "type": "university",
+          "note": "同济大学官方通知含CAIR/CAIA介绍；团队人数作为该通知口径呈现，不推广为全部赛道统一限制。",
+          "accessNote": "同济大学官方通知含CAIR/CAIA介绍；团队人数作为该通知口径呈现，不推广为全部赛道统一限制。"
+        }
+      ]
+    },
+    {
+      "id": "robot-creative",
+      "catalogNumber": 49,
+      "parentCatalogNo": 49,
+      "catalogName": "中国高校智能机器人创意大赛",
+      "name": "中国高校智能机器人创意大赛",
+      "category": "硬件系统",
+      "summary": "从家庭需求和机器人竞技任务出发，提出设计并制作可解释、可验证的创意原型。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第六届面向经学校同意报名的全国高校在校专科生、本科生和研究生；具体主题与专项规则分别执行。",
+      "teamFormat": "团队",
+      "teamSize": "主题一、二：1—3名学生；主题三及专项：1—4名学生；指导教师1—2名",
+      "deliveryMode": "作品申报、文档与视频评审，区域赛选拔后进入全国决赛；作品可为创意方案或实物原型",
+      "courses": [
+        "嵌入式系统",
+        "自动控制",
+        "计算机视觉",
+        "人机交互"
+      ],
+      "courseRelation": [
+        {
+          "course": "嵌入式系统",
+          "use": "实现传感、执行与控制器协作。"
+        },
+        {
+          "course": "自动控制",
+          "use": "设计机器人动作及反馈控制。"
+        },
+        {
+          "course": "计算机视觉",
+          "use": "获取环境信息并识别操作目标。"
+        },
+        {
+          "course": "人机交互",
+          "use": "分析使用场景并设计人与机器人的交互。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "创意设计",
+        "智能机器人",
+        "原型验证"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023第六届中国高校智能机器人创意大赛",
+        "start": "2023-04-01",
+        "end": "2023-06-30",
+        "status": "complete",
+        "windowText": "全国1号通知：2023年4月1日—6月30日；各赛区可有差异。",
+        "sourceIds": [
+          "robotcreative2023"
+        ],
+        "note": "这是全国1号通知的参考报名窗口，原文明确各赛区时间可能不同并以所在赛区通知为准；7月作品提交及8月决赛日期未混为报名。",
+        "months": [
+          4,
+          5,
+          6
+        ],
+        "scope": "2023全国1号通知参考窗口，赛区另有安排"
+      },
+      "officialUrl": "https://www.robotcontest.cn/",
+      "evidence": [
+        {
+          "id": "robotcreative2023",
+          "title": "关于举办第六届中国高校智能机器人创意大赛的通知（1号通知）",
+          "url": "https://jiaowu.web.hebust.edu.cn/docs/2023-06/da337b3a578a45fe9002129af8b6b372.pdf",
+          "supports": [
+            "2023本科生等参赛资格",
+            "各主题团队人数",
+            "4月1日至6月30日参考窗口及赛区差异",
+            "作品材料与区域选拔机制"
+          ],
+          "accessed": "2026-11-05",
+          "type": "university-reprint",
+          "note": "赛事组委会原始通知，由河北科技大学教务处保存；日期明确是2023且注明区域例外。",
+          "accessNote": "赛事组委会原始通知，由河北科技大学教务处保存；日期明确是2023且注明区域例外。"
+        }
+      ]
+    },
+    {
+      "id": "service-outsourcing",
+      "catalogNumber": 24,
+      "parentCatalogNo": 24,
+      "catalogName": "中国大学生服务外包创新创业大赛",
+      "name": "中国大学生服务外包创新创业大赛",
+      "category": "工程开发",
+      "summary": "聚焦企业命题的软件与信息技术项目，将真实需求开发为可展示的产品与服务。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第十四届面向高校全日制在校学生（含本科及2023应届毕业生）和毕业不超过5年的大学生；每队仅选一个竞赛类别。",
+      "teamFormat": "团队",
+      "teamSize": "最多5名学生、2名指导教师",
+      "deliveryMode": "本条聚焦A类企业命题中的软件与信息技术项目；作品评审、区域赛、全国决赛",
+      "courses": [
+        "软件工程",
+        "数据库",
+        "程序设计",
+        "软件测试"
+      ],
+      "courseRelation": [
+        {
+          "course": "软件工程",
+          "use": "将企业需求拆解为功能、里程碑和协作任务。"
+        },
+        {
+          "course": "数据库",
+          "use": "组织业务数据及查询接口。"
+        },
+        {
+          "course": "程序设计",
+          "use": "实现系统功能并完成集成。"
+        },
+        {
+          "course": "软件测试",
+          "use": "用测试验证关键业务流程和交付质量。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "企业命题",
+        "服务外包",
+        "产品开发"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十四届",
+        "start": "2022-11-21",
+        "end": "2023-03-26",
+        "status": "complete",
+        "windowText": "2022年11月21日—2023年3月26日（延期后）。",
+        "note": "原截止日为2023年3月10日，后延至3月26日；本条聚焦A类软件与信息技术项目，校内选拔可能提前截止。",
+        "months": [
+          1,
+          2,
+          3
+        ],
+        "sourceIds": [
+          "fwwb2023-notice",
+          "fwwb2023-extension"
+        ],
+        "scope": "全国A类企业命题报名与选题"
+      },
+      "officialUrl": "https://www.fwwb.org.cn/",
+      "evidence": [
+        {
+          "id": "fwwb2023-notice",
+          "title": "上海电机学院转发第十四届服创大赛通知",
+          "url": "https://gyjszx.sdju.edu.cn/_t968/2023/0105/c3185a114895/page.htm",
+          "supports": [
+            "2023届资格",
+            "队伍人数",
+            "原报名起止日期",
+            "A/B类别"
+          ],
+          "type": "university",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取对应2023届历史来源正文。"
+        },
+        {
+          "id": "fwwb2023-extension",
+          "title": "广州软件学院：第十四届服创大赛延期通知",
+          "url": "https://www.gzus.edu.cn/cxcyxy/info/1044/1081.htm",
+          "supports": [
+            "全国报名延至2023年3月26日",
+            "区分校内选拔截止"
+          ],
+          "type": "university",
+          "accessed": "2026-11-05",
+          "accessNote": "正文明确全国A/B两类延期至3月26日；本校B类校赛另为3月10日。"
+        }
+      ]
+    },
+    {
+      "id": "datang-cup",
+      "catalogNumber": 41,
+      "parentCatalogNo": 41,
+      "catalogName": "“大唐杯”全国大学生新一代信息通信技术大赛",
+      "name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+      "category": "硬件系统",
+      "summary": "在5G通信网络与应用仿真中，把网络原理转化为工程实践。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第十届面向具正式全日制学籍且符合赛道条件的本科生、研究生及高职高专学生；工程实践赛设本科A/B组。",
+      "teamFormat": "团队",
+      "teamSize": "工程实践赛2人；5G+创新应用仿真设计赛4—6人，至少来自2个专业",
+      "deliveryMode": "信息通信工程实践及5G+应用仿真；省赛、全国总决赛分阶段组织",
+      "courses": [
+        "计算机网络",
+        "通信原理",
+        "物联网技术"
+      ],
+      "courseRelation": [
+        {
+          "course": "计算机网络",
+          "use": "理解网络分层、路由与通信系统互连。"
+        },
+        {
+          "course": "通信原理",
+          "use": "分析移动通信传输与5G关键技术。"
+        },
+        {
+          "course": "物联网技术",
+          "use": "将通信能力接入智能设备与应用场景。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "5G",
+        "网络工程",
+        "通信仿真"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十届",
+        "start": "2022-12-15",
+        "end": "2023-03-10",
+        "status": "complete",
+        "windowText": "2022年12月15日—2023年3月10日。",
+        "note": "通过学校教师代表统一报名；学校内部征集和选拔可有更早截止日。",
+        "months": [
+          1,
+          2,
+          3
+        ],
+        "sourceIds": [
+          "datang2023-guit",
+          "datang2023-outline"
+        ],
+        "scope": "第十届全国报名安排（学校统一提交）"
+      },
+      "officialUrl": "https://dtcup.dtxiaotangren.com/",
+      "evidence": [
+        {
+          "id": "datang2023-guit",
+          "title": "桂林信息科技学院：第十届大唐杯组织通知",
+          "url": "https://www.guit.edu.cn/xxgkw/info/1006/1526.htm",
+          "supports": [
+            "2023报名起止",
+            "本科资格",
+            "两赛道人数与组队要求"
+          ],
+          "type": "university",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取对应2023届历史来源正文。"
+        },
+        {
+          "id": "datang2023-outline",
+          "title": "辽宁理工学院：2023大唐杯赛事安排",
+          "url": "https://cxxy.lnist.edu.cn/info/1008/1886.htm",
+          "supports": [
+            "全国报名2022年12月15日至2023年3月10日",
+            "学校统一报名"
+          ],
+          "type": "university",
+          "accessed": "2026-11-05",
+          "accessNote": "高校发布的完整赛事说明与大纲说明；与桂林信息科技学院报名日期一致。"
+        }
+      ]
+    },
+    {
+      "id": "craic",
+      "catalogNumber": 51,
+      "parentCatalogNo": 51,
+      "catalogName": "中国机器人及人工智能大赛",
+      "name": "中国机器人及人工智能大赛",
+      "category": "数据智能",
+      "summary": "围绕机器人感知、智能决策与应用创新，验证可运行的智能方案。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第二十五届包含研究生、本科生、职业本科和高职高专学生；各地按校赛、赛区选拔及全国赛推荐。",
+      "teamFormat": "个人+团队",
+      "teamSize": "一般1—3人，可设1—2名指导教师；具体赛项依对应规则",
+      "deliveryMode": "创新、应用、竞技和挑战类赛项；各赛区按项目安排线上或线下比赛",
+      "courses": [
+        "Python程序设计",
+        "计算机视觉",
+        "自动控制",
+        "嵌入式系统"
+      ],
+      "courseRelation": [
+        {
+          "course": "Python程序设计",
+          "use": "搭建感知与决策程序，验证算法流程。"
+        },
+        {
+          "course": "计算机视觉",
+          "use": "处理相机输入并识别场景目标。"
+        },
+        {
+          "course": "自动控制",
+          "use": "设计运动反馈和控制策略。"
+        },
+        {
+          "course": "嵌入式系统",
+          "use": "连接传感器、执行器与主控制器。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "机器人",
+        "人工智能",
+        "智能应用"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第二十五届",
+        "start": null,
+        "end": null,
+        "status": "unknown",
+        "windowText": "2023年4月开放报名系统；全国统一的精确起止日未核实。",
+        "note": "各赛区截止不同；已核到江苏5月8日、上海承办高校通知5月15日，不将这些地区安排写作全国统一期限。",
+        "months": [],
+        "sourceIds": [
+          "craic2023-general",
+          "craic2023-js"
+        ],
+        "scope": "全国报名系统（精确起止未知；分赛区另定）"
+      },
+      "officialUrl": "https://www.caairobot.com/",
+      "evidence": [
+        {
+          "id": "craic2023-general",
+          "title": "哈尔滨工程大学：第二十五届中国机器人及人工智能大赛通知",
+          "url": "https://qihang.hrbeu.edu.cn/2023/0504/c959a307680/page.htm",
+          "supports": [
+            "2023届存在",
+            "本科参赛资格",
+            "4月开放报名系统"
+          ],
+          "type": "university",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取对应2023届历史来源正文。"
+        },
+        {
+          "id": "craic2023-js",
+          "title": "江苏省人工智能学会：第二十五届江苏赛区通知",
+          "url": "https://www.jsai.org.cn/notice/3713.html",
+          "supports": [
+            "2023赛项类别",
+            "本科资格",
+            "江苏分赛区5月8日截止"
+          ],
+          "type": "organizer",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取对应2023届历史来源正文。"
+        },
+        {
+          "id": "craic2023-team",
+          "title": "西北工业大学：第二十五届陕西赛区报名通知",
+          "url": "https://jiaowu.nwpu.edu.cn/info/1160/9698.htm",
+          "supports": [
+            "2023一般队伍人数1至3人",
+            "指导教师1至2人"
+          ],
+          "type": "university",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取对应2023届历史来源正文。"
+        },
+        {
+          "id": "craic2023-sh",
+          "title": "上海工程技术大学：第二十五届上海赛区报名通知",
+          "url": "https://jwc.sues.edu.cn/b1/15/c24063a241941/page.htm",
+          "supports": [
+            "上海赛区本科资格",
+            "校赛及省国赛办法",
+            "按项目区分线上线下"
+          ],
+          "type": "university",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取对应2023届历史来源正文。"
+        }
+      ]
+    },
+    {
+      "id": "ican",
+      "catalogNumber": 54,
+      "parentCatalogNo": 54,
+      "catalogName": "iCAN大学生创新创业大赛",
+      "name": "iCAN大学生创新创业大赛",
+      "category": "工程开发",
+      "summary": "聚焦创新赛道的信息技术原型，让原创想法成为能演示、能操作的真实应用。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第十七届创新赛道面向高校及科研院所在校学生（含本科等）；需原创可操作原型，禁止跨赛区组队，每人限一队。",
+      "teamFormat": "团队",
+      "teamSize": "创新赛道2—5名队员、最多2名指导教师",
+      "deliveryMode": "原型作品与项目说明；校内选拔、分赛区选拔、全国总决赛",
+      "courses": [
+        "软件工程",
+        "物联网技术",
+        "人机交互",
+        "程序设计"
+      ],
+      "courseRelation": [
+        {
+          "course": "软件工程",
+          "use": "规划需求、原型开发与项目文档。"
+        },
+        {
+          "course": "物联网技术",
+          "use": "连接感知设备与应用服务。"
+        },
+        {
+          "course": "人机交互",
+          "use": "验证用户任务与产品交互体验。"
+        },
+        {
+          "course": "程序设计",
+          "use": "实现原型的核心功能。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "创新原型",
+        "物联网",
+        "应用创新"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十七届·创新赛道",
+        "start": null,
+        "end": "2023-07-31",
+        "status": "partial",
+        "windowText": "2023年7月31日报名截止；起日仅说明为5月，未核实到具体日。",
+        "note": "本条聚焦与计算机/信息类相关的创新赛道；挑战赛另有赛题与报名安排，不能共用本期限。",
+        "months": [],
+        "sourceIds": [
+          "ican2023"
+        ],
+        "scope": "第十七届创新赛道报名"
+      },
+      "officialUrl": "https://www.g-ican.com/",
+      "evidence": [
+        {
+          "id": "ican2023",
+          "title": "武汉纺织大学：2023年第十七届iCAN大赛通知",
+          "url": "https://cyxy.wtu.edu.cn/info/1023/1923.htm",
+          "supports": [
+            "2023创新赛道本科资格",
+            "2至5人组队",
+            "7月31日报名截止",
+            "信息技术应用与原型要求"
+          ],
+          "type": "university",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取对应2023届历史来源正文。"
+        }
+      ]
+    },
+    {
+      "id": "iscc",
+      "catalogNumber": 66,
+      "parentCatalogNo": 66,
+      "catalogName": "全国大学生信息安全与对抗技术竞赛",
+      "name": "全国大学生信息安全与对抗技术竞赛",
+      "category": "网络安全",
+      "summary": "通过安全解题与授权环境中的对抗，理解系统漏洞、取证分析和防护。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第20届线上三个赛项接受在校学生和社会人士注册；设大学生等赛区。分组对抗赛选拔优秀选手并结合推荐邀请。",
+      "teamFormat": "个人+团队",
+      "teamSize": "个人挑战、无限擂台、数据思维为个人；分组对抗3人一队",
+      "deliveryMode": "线上挑战与数据建模；分组对抗在指定线下模拟环境进行",
+      "courses": [
+        "信息安全",
+        "操作系统",
+        "计算机网络",
+        "密码学"
+      ],
+      "courseRelation": [
+        {
+          "course": "信息安全",
+          "use": "辨识漏洞与安全边界，复盘防护策略。"
+        },
+        {
+          "course": "操作系统",
+          "use": "理解内存、进程及软件执行机制。"
+        },
+        {
+          "course": "计算机网络",
+          "use": "分析协议、流量与网络服务。"
+        },
+        {
+          "course": "密码学",
+          "use": "理解加密与数据完整性保护。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "ISCC",
+        "CTF",
+        "安全对抗"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第20届·线上三个赛项",
+        "start": "2023-04-30",
+        "end": null,
+        "status": "partial",
+        "windowText": "2023年4月30日8:00开放注册；注册截止日未核实。",
+        "note": "5月1日是比赛开始时间，不是报名开始；比赛持续约25天不能据此推算注册截止。线下分组对抗另行邀请。",
+        "months": [],
+        "sourceIds": [
+          "iscc2023"
+        ],
+        "scope": "个人挑战、无限擂台、数据思维线上注册"
+      },
+      "officialUrl": "https://www.isclab.org.cn/",
+      "evidence": [
+        {
+          "id": "iscc2023",
+          "title": "ISCC组委会：2023年第20届信息安全与对抗技术竞赛通知",
+          "url": "https://www.isclab.org.cn/2023/04/10/2023%E5%B9%B4%E7%AC%AC20%E5%B1%8A%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E4%B8%8E%E5%AF%B9%E6%8A%97%E6%8A%80%E6%9C%AF%E7%AB%9E%E8%B5%9B%E9%80%9A%E7%9F%A5/",
+          "supports": [
+            "2023四赛项及参赛方式",
+            "4月30日8时注册开放",
+            "个人与3人对抗队伍"
+          ],
+          "type": "organizer",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取对应2023届历史来源正文。"
+        }
+      ]
+    },
+    {
+      "id": "digital-media",
+      "catalogNumber": 71,
+      "parentCatalogNo": 71,
+      "catalogName": "全国大学生数字媒体科技作品及创意竞赛",
+      "name": "全国大学生数字媒体科技作品及创意竞赛",
+      "category": "工程开发",
+      "summary": "聚焦交互、图形和智能应用等技术作品，将计算机知识融入数字媒体。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第十一届面向普通高校各类在校生（含本科、高职高专），专业不限；鼓励跨专业、跨校组队。",
+      "teamFormat": "团队",
+      "teamSize": "原则上不超过5名学生；设1—2名指导教师或研究生组长",
+      "deliveryMode": "本条聚焦交互、图形和智能应用等技术作品；校赛、省赛/分区赛和全国现场总决赛",
+      "courses": [
+        "人机交互",
+        "计算机图形学",
+        "程序设计",
+        "计算机视觉"
+      ],
+      "courseRelation": [
+        {
+          "course": "人机交互",
+          "use": "设计内容结构、交互流程和体验评估。"
+        },
+        {
+          "course": "计算机图形学",
+          "use": "实现图形渲染、动画和三维场景。"
+        },
+        {
+          "course": "程序设计",
+          "use": "开发数字作品的功能与展示流程。"
+        },
+        {
+          "course": "计算机视觉",
+          "use": "为视觉交互与智能影像处理提供方法。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "数字媒体",
+        "交互开发",
+        "图形技术"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第十一届",
+        "start": null,
+        "end": "2023-09-30",
+        "status": "partial",
+        "windowText": "2023年9月30日24:00报名及作品提交截止（延期后）；起日未核实。",
+        "note": "采用官网延期通知中的9月30日；原通知9月16日已被更新。决赛日期与报名时间分别处理。",
+        "months": [],
+        "sourceIds": [
+          "digitalmedia2023-extension"
+        ],
+        "scope": "全国报名与作品提交截止"
+      },
+      "officialUrl": "https://www.cmit.cn/",
+      "evidence": [
+        {
+          "id": "digitalmedia2023-notice",
+          "title": "数媒竞赛组委会：2023年第十一届竞赛通知",
+          "url": "https://www.cmit.cn/wap/tongzhigonggao/show-144-45535-1.html",
+          "supports": [
+            "2023本科及其他在校生资格",
+            "原则上不超过5人",
+            "三级赛制"
+          ],
+          "type": "organizer",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取对应2023届历史来源正文。"
+        },
+        {
+          "id": "digitalmedia2023-extension",
+          "title": "2023年第十一届数媒竞赛延期通知（盖章PDF）",
+          "url": "https://www.cmit.cn/uploadfile/2023/0908/2023%E5%B9%B4%E7%AC%AC%E5%8D%81%E4%B8%80%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%97%E5%AA%92%E4%BD%93%E7%A7%91%E6%8A%80%E4%BD%9C%E5%93%81%E5%8F%8A%E5%88%9B%E6%84%8F%E7%AB%9E%E8%B5%9B%E9%80%9A%E7%9F%A5--%E5%BB%B6%E6%9C%9F%E9%80%9A%E7%9F%A5%EF%BC%88%E7%9B%96%E5%AD%A6%E4%BC%9A%E5%85%AC%E7%AB%A0%EF%BC%89.pdf",
+          "supports": [
+            "报名与作品提交延至2023年9月30日24时"
+          ],
+          "type": "organizer",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取官网PDF第4页时间表，采用延期后的截止日。"
+        }
+      ]
+    },
+    {
+      "id": "global-ai",
+      "catalogNumber": 76,
+      "parentCatalogNo": 76,
+      "catalogName": "全球校园人工智能算法精英大赛",
+      "name": "全球校园人工智能算法精英大赛",
+      "category": "数据智能",
+      "summary": "在视觉、语言与智能应用任务中，训练算法、验证效果并说明方案。",
+      "level": "榜单内",
+      "levelNote": "指2023年84项竞赛目录内；A类由各校政策认定，本站不统一指定。",
+      "grades": [
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "2023第五届面向全球在校研究生、本科生及高职高专学生；具体组别和资格依赛道要求，可单人或跨校组队。",
+      "teamFormat": "个人+团队",
+      "teamSize": "每队1—3人、最多2名指导教师",
+      "deliveryMode": "算法挑战、创新和应用赛经校赛、省赛/区域赛及总决赛；形式依具体赛项通知",
+      "courses": [
+        "Python程序设计",
+        "线性代数",
+        "概率统计",
+        "计算机视觉"
+      ],
+      "courseRelation": [
+        {
+          "course": "Python程序设计",
+          "use": "实现数据预处理、模型实验和评测脚本。"
+        },
+        {
+          "course": "线性代数",
+          "use": "理解特征表示与模型矩阵运算。"
+        },
+        {
+          "course": "概率统计",
+          "use": "设计验证方案并评估泛化误差。"
+        },
+        {
+          "course": "计算机视觉",
+          "use": "处理识别、检测和多模态视觉任务。"
+        }
+      ],
+      "courseBasis": "课程关联为项目编辑建议，不代表官方先修条件或获奖概率。",
+      "tags": [
+        "人工智能",
+        "算法模型",
+        "视觉语言"
+      ],
+      "registration": {
+        "year": 2023,
+        "edition": "2023年第五届·挑战/创新/应用赛",
+        "start": "2023-09-25",
+        "end": "2023-11-25",
+        "status": "complete",
+        "windowText": "2023年9月25日—11月25日20:00。",
+        "note": "组委会报名正文明确晚8点关闭；平台侧栏显示23:59，采用正文。算法精英赛、算法专项赛单独安排。",
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "sourceIds": [
+          "globalai2023"
+        ],
+        "scope": "算法挑战、算法创新、算法应用三个赛道"
+      },
+      "officialUrl": "https://www.aicomp.cn/",
+      "evidence": [
+        {
+          "id": "globalai2023",
+          "title": "第五届全球校园人工智能算法精英大赛组委会报名页",
+          "url": "https://www.saikr.com/vse/48030",
+          "supports": [
+            "2023报名起止",
+            "本科资格",
+            "每队不超过3人",
+            "三级赛制与独立赛道"
+          ],
+          "type": "organizer",
+          "accessed": "2026-11-05",
+          "accessNote": "赛氪页面发布者为大赛组委会，是对应届官方报名承接页；按正文而非侧栏默认时间记录截止时刻。"
+        },
+        {
+          "id": "globalai2023-university",
+          "title": "大连理工大学：2023全球校园人工智能算法精英大赛报名通知",
+          "url": "https://ss.dlut.edu.cn/info/1261/8771.htm",
+          "supports": [
+            "2023届赛事及本科生组织报名"
+          ],
+          "type": "university",
+          "accessed": "2026-11-05",
+          "accessNote": "已读取高校2023年10月30日发布正文；附件需验证码，未将附件作为读取依据。"
+        }
+      ]
+    },
+    {
+      "id": "china-us-maker",
+      "catalogNumber": 39,
+      "parentCatalogNo": 39,
+      "catalogName": "中美青年创客大赛",
+      "name": "中美青年创客大赛 · 上海赛区",
+      "category": "工程开发",
+      "summary": "将软件、开源硬件和交互设计组合成可演示的创新原型。",
+      "level": "榜单内",
+      "levelNote": "2023竞赛目录内；A类由学校正式目录认定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "主赛道不限制专业；须满足公民或永久居留身份要求，2023届出生日期范围为1983-06-01至2005-06-01。普通本科生不参加职教专属赛道。",
+      "teamFormat": "个人+团队",
+      "teamSize": "个人，或不超过5人团队（含领队）",
+      "deliveryMode": "线上提交、初评＋上海赛区现场路演",
+      "courses": [
+        "软件工程",
+        "人机交互",
+        "嵌入式系统"
+      ],
+      "courseRelation": [
+        {
+          "course": "软件工程",
+          "use": "把社会需求转化为可验证的产品功能。"
+        },
+        {
+          "course": "人机交互",
+          "use": "设计并测试原型的使用流程。"
+        },
+        {
+          "course": "嵌入式系统",
+          "use": "连接传感器、硬件和应用程序。"
+        }
+      ],
+      "courseBasis": "课程关联为项目学习建议，不是官方先修要求。",
+      "tags": [
+        "跨学科",
+        "开放本科生"
+      ],
+      "officialUrl": "https://chinaus-maker.cscse.edu.cn/",
+      "registration": {
+        "year": 2023,
+        "months": [],
+        "edition": "2023中美青年创客大赛·上海赛区主赛道",
+        "start": "2023-06-06",
+        "end": "2023-06-25",
+        "status": "complete",
+        "windowText": "上海赛区：2023年6月6日—6月25日24:00。",
+        "sourceIds": [
+          "maker2023-shanghai"
+        ],
+        "scope": "2023上海赛区",
+        "note": "日期仅代表上海赛区，其他赛区各有安排。信息公开页虽在10月归档，正文明确记载6月报名和7月路演，采用正文届次安排。"
+      },
+      "evidence": [
+        {
+          "id": "maker2023-shanghai",
+          "title": "同济大学：2023中美青年创客大赛上海赛区作品征集",
+          "url": "https://xxgk.tongji.edu.cn/index.php?classid=9534&newsid=17400&t=show",
+          "supports": [
+            "上海赛区报名窗口",
+            "个人或5人团队",
+            "年龄与身份要求",
+            "现场路演"
+          ],
+          "accessed": "2026-11-05",
+          "sourceType": "university",
+          "accessNote": "已读取对应届次来源。"
+        },
+        {
+          "id": "maker2023-sjtu",
+          "title": "上海交通大学：2023中美青年创客大赛全球总决赛报道",
+          "url": "https://news.sjtu.edu.cn/zhxw/20230829/187460.html",
+          "supports": [
+            "交大参与2023赛事",
+            "数字技术与跨学科作品"
+          ],
+          "accessed": "2026-11-05",
+          "sourceType": "university",
+          "accessNote": "已读取对应届次来源。"
+        }
+      ]
+    },
+    {
+      "id": "statistical-modeling",
+      "catalogNumber": 68,
+      "parentCatalogNo": 68,
+      "catalogName": "全国大学生统计建模大赛",
+      "name": "全国大学生统计建模大赛",
+      "category": "数据智能",
+      "summary": "围绕现实问题整理数据、建立统计模型，并用可复现的分析支撑结论。",
+      "level": "榜单内",
+      "levelNote": "2023竞赛目录内；A类由学校正式目录认定。",
+      "grades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "gradeBasis": "项目编辑建议，非官方资格条件。",
+      "eligibility": "全日制在读本科生可参加本科生组，专业不限；本科生与研究生不可混合组队。",
+      "teamFormat": "团队",
+      "teamSize": "3名学生；指导教师不超过2人",
+      "deliveryMode": "线上提交论文与数据＋入围全国赛现场答辩",
+      "courses": [
+        "概率统计",
+        "Python程序设计",
+        "线性代数"
+      ],
+      "courseRelation": [
+        {
+          "course": "概率统计",
+          "use": "选择统计方法并解释估计与检验结果。"
+        },
+        {
+          "course": "Python程序设计",
+          "use": "清洗数据、实现模型并保存可复现代码。"
+        },
+        {
+          "course": "线性代数",
+          "use": "理解回归、多变量分析和矩阵计算。"
+        }
+      ],
+      "courseBasis": "课程关联为项目学习建议，不是官方先修要求。",
+      "tags": [
+        "跨学科",
+        "开放本科生"
+      ],
+      "officialUrl": "https://tjjmds.ai-learning.net/",
+      "registration": {
+        "year": 2023,
+        "months": [],
+        "edition": "2023年第九届·本科生组",
+        "start": "2023-02-20",
+        "end": "2023-03-31",
+        "status": "complete",
+        "windowText": "2023年2月20日09:00—3月31日20:00。",
+        "sourceIds": [
+          "statistics2023-notice",
+          "statistics2023-attachments"
+        ],
+        "scope": "2023全国本科生组",
+        "note": "5月26日是作品提交期限，不是报名截止；报名与作品提交为两个阶段。"
+      },
+      "evidence": [
+        {
+          "id": "statistics2023-notice",
+          "title": "国家统计局：中国统计教育学会2023统计建模大赛通知",
+          "url": "https://www.stats.gov.cn/xw/tjxw/tzgg/202302/t20230224_1918484.html",
+          "supports": [
+            "不限专业本科生资格",
+            "报名截止",
+            "线上提交和现场答辩"
+          ],
+          "accessed": "2026-11-05",
+          "sourceType": "organizer",
+          "accessNote": "已读取对应届次来源。"
+        },
+        {
+          "id": "statistics2023-attachments",
+          "title": "2023统计建模大赛通知与附件（上海海事大学保存原件）",
+          "url": "https://wlxy.shmtu.edu.cn/_upload/article/files/06/0a/d1313c004f53b13c53f2f394fd0a/9f515b0a-6931-4c1a-9051-193cf396de68.pdf",
+          "supports": [
+            "附件2报名起止",
+            "队长加两位组员共3人"
+          ],
+          "accessed": "2026-11-05",
+          "sourceType": "university",
+          "accessNote": "已核读PDF第10页报名窗口、第13页组员字段；主通知与国家统计局发布内容一致。"
+        }
+      ]
+    }
+  ]
+};

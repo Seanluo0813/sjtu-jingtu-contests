@@ -11,13 +11,15 @@
 
 支持方向、年级、课程、个人／团队筛选，关键词搜索、收藏、最多3项对比、报名日历、统计和CSV导出。搜索“电赛”或“NUEDC”可找到全国大学生电子设计竞赛。右上圆环中心恢复所有方向，保留其他筛选，并平滑滚动到探索区。桌面双栏900px，中屏920px，手机列表470px。
 
-## GitHub Pages 发布目录
+## GitHub Pages 已发布
 
-本仓库根目录就是完整静态站点：入口为 [index.html](index.html)。预期发布源为 `main` 分支的仓库根目录，随附 `.nojekyll`；无需安装依赖、无需构建或配置Actions工作流。
+正式网址：[竞途 · GitHub Pages](https://seanluo0813.github.io/sjtu-jingtu-contests/)。
 
-相对资源、字体、数据下载和锚点路由适用于 `/sjtu-jingtu-contests/` 子路径。GitHub Pages网址取决于仓库所属账号，未在此预填不存在的发布地址。
+本仓库根目录就是完整静态站点，入口为 [index.html](index.html)。当前从 `main` 分支根目录发布，已启用HTTPS，随附 `.nojekyll`。无需安装前端依赖或运行构建；GitHub自动完成Pages部署。
 
-现有Sites公开页面：[竞途](https://sjtu-jingtu-contests.fuzzypond513.chatgpt.site/)。本目录准备并不代表GitHub部署已完成。
+相对资源、字体、数据下载和锚点路由已按 `/sjtu-jingtu-contests/` 子路径验证。公开首页及 `data.json` 匿名访问均返回HTTP 200，数据为30项赛事、25门课程、2023届历史资料。
+
+仓库：[Seanluo0813/sjtu-jingtu-contests](https://github.com/Seanluo0813/sjtu-jingtu-contests)。首次[Pages部署运行](https://github.com/Seanluo0813/sjtu-jingtu-contests/actions/runs/41994101389)已成功。原有[Sites页面](https://sjtu-jingtu-contests.fuzzypond513.chatgpt.site/)继续保留。
 
 离线查看可直接打开 `index.html`，数据由随附 `data.js` 载入。收藏仅保存在当前浏览器，无账号、数据库或后端服务。
 

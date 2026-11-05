@@ -22,7 +22,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 input[type=checkbox]{accent-color:var(--red)}
 img,svg{max-width:100%}
 ::selection{background:#f7c9c5;color:#6a1821}
-header{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1360px;min-height:90px;margin:auto;padding:0 40px;border-bottom:1px solid var(--line)}
+header{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1360px;min-height:90px;margin:auto;padding:0 40px;border-bottom:0}
 .brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
 .brandmark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--red);color:#fff;font-size:22px;box-shadow:0 6px 16px #c8161e16}
 .brand strong{font-family:var(--serif);font-size:22px;letter-spacing:.03em;white-space:nowrap}
@@ -241,7 +241,6 @@ body:has(#compareTray:not([hidden])) #toast{bottom:122px}
 #compareNames>button{min-height:40px;max-width:250px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left}
 
 /* Deeper SJTU red and clearer surface hierarchy. */
-header{border-bottom-color:#dcbbb3}
 header nav a{color:#573a45}
 .brandmark{background:linear-gradient(145deg,#de2b34,var(--red) 60%,#981420);box-shadow:0 6px 16px #a2162426,inset 0 1px 0 #ffffff30}
 .primary{background:linear-gradient(135deg,#dc2831,var(--red) 60%,#a31521);box-shadow:0 9px 22px #9a1a2726,inset 0 1px 0 #ffffff30}

@@ -73,6 +73,7 @@
     const unknown=filtered.filter(c=>!calendarRecords(c).some(validRange)).length;
     $('#clearMonth').textContent=state.month?'查看全年':'全年';
     $('#calendarList').innerHTML=`<div class="calendar-caption">${state.year} 年${state.month?' '+state.month+' 月':''} · ${new Set(entries.map(c=>c.id)).size} 项赛事的完整窗口${partial.length?' · '+partial.length+' 项单端日期':''}<span>${unknown} 项未核实完整区间，不计入月度统计</span></div>`+(entries.length||partial.length ? [...entries,...partial].map(c=>`<a class="calendar-entry" href="#contest/${encodeURIComponent(c.id)}" data-calendar-contest="${esc(c.id)}"><div class="calendar-name"><strong>${esc(c.name)}</strong><small>${esc(c.registration.edition)}</small></div><div class="calendar-date">${esc(c.registration.start || '开始日待核验')} <span>—</span> ${esc(c.registration.end || '截止日待核验')}</div><span class="calendar-note">${validRange(c)?'查看赛事 ↗':'仅部分日期 ↗'}</span></a>`).join('') : '<div class="empty-state compact"><p>此范围暂无已核实的报名日期，试试其他年份或月份。</p></div>');
+    window.JingtuSelects?.refresh();
   }
   function renderAnalysis() {
     const total=filtered.length, counts=count(filtered,'category'), courseCounts=count(filtered,'courses');

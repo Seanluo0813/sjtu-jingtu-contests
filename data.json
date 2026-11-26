@@ -30,7 +30,8 @@
     "partialWindowCount": 8,
     "unknownWindowCount": 4,
     "officialUrlPolicy": "officialUrl只提供赛事官网入口；2023事实以evidence历史来源为依据。",
-    "selectionPolicy": "只收录与计算机、信息技术有直接技术关联的赛事；保留算法、数据与人工智能、电子和嵌入式、通信与网安、软件开发和机器人方向。"
+    "selectionPolicy": "只收录与计算机、信息技术有直接技术关联的赛事；保留算法、数据与人工智能、电子和嵌入式、通信与网安、软件开发和机器人方向。",
+    "officialLinksCheckedAt": "2026-11-26"
   },
   "contests": [
     {
@@ -108,7 +109,13 @@
           ],
           "accessNote": "ICPC中国赛事站点北京大学网站保存的官方指南；已下载PDF核读。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "cumcm",
@@ -196,7 +203,13 @@
           ],
           "accessNote": "已下载官方PDF；报名须知表1和附章程分别核对。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "nuedc",
@@ -294,7 +307,13 @@
           "note": "比赛时间仅用于赛制说明，不进入报名日历。",
           "accessNote": "比赛时间仅用于赛制说明，不进入报名日历。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "上海赛区官网",
+        "note": "现入口为上海交通大学承办的上海赛区官网，并非全国统一报名入口。"
+      }
     },
     {
       "id": "smartcar",
@@ -381,7 +400,13 @@
           ],
           "accessNote": "已读取2023届历史来源正文。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "robomaster",
@@ -476,7 +501,13 @@
           ],
           "accessNote": "已读取归档并核对PDF对应版本。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "computer-design",
@@ -581,7 +612,13 @@
           ],
           "accessNote": "高校官网搜索索引正文可读；本机直连本轮超时。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "gplt",
@@ -675,7 +712,13 @@
           ],
           "accessNote": "只采用全国赛事形式；该页3月15日校内报名截止不作为全国窗口。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "官网自动进入竞赛规程，已核对三类组别、主办单位及报名平台；当前内容为新届次规则。"
+      }
     },
     {
       "id": "lanqiao",
@@ -787,7 +830,13 @@
           ],
           "accessNote": "已下载官方PDF。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "ciscn",
@@ -858,7 +907,7 @@
         ],
         "scope": "全国对应赛道"
       },
-      "officialUrl": "https://www.ciscn.cn/",
+      "officialUrl": null,
       "evidence": [
         {
           "id": "ciscn2023",
@@ -871,7 +920,8 @@
             "同校≤4学生",
             "线上初评与线下会评"
           ],
-          "accessNote": "官方公告搜索索引可读；直连访问不稳定。"
+          "accessNote": "官方公告搜索索引可读；直连访问不稳定。",
+          "linkUnavailable": "官网证书不受信任，已停止收录该入口。请参考赛事通知。"
         },
         {
           "id": "ciscn2023-extension",
@@ -882,9 +932,20 @@
           "supports": [
             "报名延期至2023-06-14 24:00"
           ],
-          "accessNote": "官方公告列表搜索索引核读全文；直连列表TLS/超时，未声称单篇直连成功。"
+          "accessNote": "官方公告列表搜索索引核读全文；直连列表TLS/超时，未声称单篇直连成功。",
+          "linkUnavailable": "官网证书不受信任，已停止收录该入口。请参考赛事通知。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "unavailable",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "官网证书不受信任，已停止收录该入口。请参考赛事通知。",
+        "reference": {
+          "label": "承办高校赛事通知",
+          "url": "https://cys.hit.edu.cn/info/1021/1513.htm"
+        }
+      }
     },
     {
       "id": "software-cup",
@@ -994,7 +1055,13 @@
           ],
           "accessNote": "已读取2023届历史来源正文。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "huawei-ict",
@@ -1055,7 +1122,7 @@
         ],
         "scope": "全国对应赛道"
       },
-      "officialUrl": "https://www.huawei.com/cn/talent/ict-academy/",
+      "officialUrl": "https://e.huawei.com/cn/talent/ict-academy/#/ict-contest",
       "evidence": [
         {
           "id": "huawei2023-rules",
@@ -1092,7 +1159,17 @@
           ],
           "accessNote": "已读取华为2023-05-27正式新闻。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "updated",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "原入口返回404，已更换为华为ICT大赛专区；浏览器已加载报名通道和赛事介绍。",
+        "reference": {
+          "label": "杭州电子科技大学报名通知",
+          "url": "https://jwc.hdu.edu.cn/2026/1020/c13482a301689/page.htm"
+        }
+      }
     },
     {
       "id": "embedded",
@@ -1209,7 +1286,13 @@
           ],
           "accessNote": "已核读官方历史通知标题与日期，不能把所有分赛区概括为线下。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "官网展示应用、芯片设计、FPGA三条赛道，本站历史记录对应应用赛道。"
+      }
     },
     {
       "id": "baidu-star",
@@ -1297,7 +1380,13 @@
           ],
           "accessNote": "已读取2023届历史来源正文。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "system-design",
@@ -1392,7 +1481,13 @@
           ],
           "accessNote": "承办高校正式报道，明确本届首次线下多个赛道总决赛联合举行。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "iot",
@@ -1462,7 +1557,7 @@
         ],
         "scope": "全国对应赛道"
       },
-      "officialUrl": "https://iot.sjtu.edu.cn/",
+      "officialUrl": null,
       "evidence": [
         {
           "id": "iot2023",
@@ -1475,9 +1570,20 @@
             "同校≤4人",
             "线上预赛和决赛形式"
           ],
-          "accessNote": "已下载官方PDF全文；章程为疫情条件保留决赛线上/线下安排。"
+          "accessNote": "已下载官方PDF全文；章程为疫情条件保留决赛线上/线下安排。",
+          "linkUnavailable": "官网HTTPS连接连续失败，暂不提供官网链接。请参考赛事通知。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "unavailable",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "官网HTTPS连接连续失败，暂不提供官网链接。请参考赛事通知。",
+        "reference": {
+          "label": "高校赛事通知",
+          "url": "https://www.shiep.edu.cn/35/0e/c6423a275726/page.htm"
+        }
+      }
     },
     {
       "id": "siemens-cimc",
@@ -1548,7 +1654,7 @@
         ],
         "scope": "2023全国官网注册组队"
       },
-      "officialUrl": "https://www.siemenscup-cimc.org.cn/",
+      "officialUrl": null,
       "evidence": [
         {
           "id": "siemens2023launch",
@@ -1561,7 +1667,8 @@
           "accessed": "2026-11-05",
           "type": "organizer",
           "note": "主办赛事官网2023年3月1日通知。",
-          "accessNote": "主办赛事官网2023年3月1日通知。"
+          "accessNote": "主办赛事官网2023年3月1日通知。",
+          "linkUnavailable": "官网证书已于2026年10月21日到期，已停止收录该入口。请勿绕过浏览器证书警告。"
         },
         {
           "id": "siemens2023rules",
@@ -1578,7 +1685,17 @@
           "note": "官方竞赛简介PDF，由合肥工业大学工程实践中心保存；不把文件的A类宣传口径替代各校认定。",
           "accessNote": "官方竞赛简介PDF，由合肥工业大学工程实践中心保存；不把文件的A类宣传口径替代各校认定。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "unavailable",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "官网证书已于2026年10月21日到期，已停止收录该入口。请勿绕过浏览器证书警告。",
+        "reference": {
+          "label": "高校赛事通知",
+          "url": "https://jwc.cugb.edu.cn/c/2026-04-13/847704.shtml"
+        }
+      }
     },
     {
       "id": "opto-design",
@@ -1644,7 +1761,7 @@
         "months": [],
         "scope": "2023主赛道各赛区分别报名"
       },
-      "officialUrl": "https://gd.p.moocollege.com/",
+      "officialUrl": null,
       "evidence": [
         {
           "id": "opto2023notice",
@@ -1673,7 +1790,13 @@
           "note": "兰州理工大学2023年4月1日页面给出官方平台地址；仅用于入口，不取其中通用举办时间作为报名日期。",
           "accessNote": "兰州理工大学2023年4月1日页面给出官方平台地址；仅用于入口，不取其中通用举办时间作为报名日期。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "unavailable",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "旧入口证书域名不匹配；候选新入口多次出现空白或报错，暂不收录官网链接。"
+      }
     },
     {
       "id": "ciciec",
@@ -1740,7 +1863,7 @@
         "months": [],
         "scope": "2023第七届报名，采用延期后的截止"
       },
-      "officialUrl": "https://univ.ciciec.com/",
+      "officialUrl": null,
       "evidence": [
         {
           "id": "ciciec2023notice",
@@ -1767,9 +1890,20 @@
           "accessed": "2026-11-05",
           "type": "organizer",
           "note": "官网重要通知列表保留该公告全文摘要；精确单篇链接未取到，列表可检索标题和日期。",
-          "accessNote": "官网重要通知列表保留该公告全文摘要；精确单篇链接未取到，列表可检索标题和日期。"
+          "accessNote": "官网重要通知列表保留该公告全文摘要；精确单篇链接未取到，列表可检索标题和日期。",
+          "linkUnavailable": "官网浏览器访问被站方拦截，暂不提供直达入口。无法确认所有网络均可正常访问。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "restricted",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "官网浏览器访问被站方拦截，暂不提供直达入口。无法确认所有网络均可正常访问。",
+        "reference": {
+          "label": "高校赛事通知",
+          "url": "https://aao.nuaa.edu.cn/2026/0128/c8222a392922/page.htm"
+        }
+      }
     },
     {
       "id": "robocup-china",
@@ -1867,7 +2001,13 @@
           "note": "湖州学院教务处及校赛组委会官方通知，证明本科生参赛路径；校内6月29日截止未作为全国日期。",
           "accessNote": "湖州学院教务处及校赛组委会官方通知，证明本科生参赛路径；校内6月29日截止未作为全国日期。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "中国自动化学会机器人竞赛与培训部网站，包含中国机器人大赛及RoboCup赛事通知。"
+      }
     },
     {
       "id": "raicom",
@@ -1968,7 +2108,13 @@
           "note": "同济大学官方通知含CAIR/CAIA介绍；团队人数作为该通知口径呈现，不推广为全部赛道统一限制。",
           "accessNote": "同济大学官方通知含CAIR/CAIA介绍；团队人数作为该通知口径呈现，不推广为全部赛道统一限制。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "robot-creative",
@@ -2038,7 +2184,7 @@
         ],
         "scope": "2023全国1号通知参考窗口，赛区另有安排"
       },
-      "officialUrl": "https://www.robotcontest.cn/",
+      "officialUrl": null,
       "evidence": [
         {
           "id": "robotcreative2023",
@@ -2055,7 +2201,13 @@
           "note": "赛事组委会原始通知，由河北科技大学教务处保存；日期明确是2023且注明区域例外。",
           "accessNote": "赛事组委会原始通知，由河北科技大学教务处保存；日期明确是2023且注明区域例外。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "unavailable",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "官网多次返回“系统出错”或空白页，暂不提供官网链接。"
+      }
     },
     {
       "id": "datang-cup",
@@ -2121,7 +2273,7 @@
         ],
         "scope": "第十届全国报名安排（学校统一提交）"
       },
-      "officialUrl": "https://dtcup.dtxiaotangren.com/",
+      "officialUrl": "https://www.ksup.cn/",
       "evidence": [
         {
           "id": "datang2023-guit",
@@ -2148,7 +2300,17 @@
           "accessed": "2026-11-05",
           "accessNote": "高校发布的完整赛事说明与大纲说明；与桂林信息科技学院报名日期一致。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "updated",
+        "checkedAt": "2026-11-26",
+        "label": "信科赛官网（原大唐杯）",
+        "note": "按官方维护公告更换入口；现名“信科赛”，本站保留2023届原赛事名称。",
+        "reference": {
+          "label": "官网维护及更名公告",
+          "url": "https://www.ksup.cn/"
+        }
+      }
     },
     {
       "id": "craic",
@@ -2268,7 +2430,13 @@
           "accessed": "2026-11-05",
           "accessNote": "已读取对应2023届历史来源正文。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "iscc",
@@ -2350,7 +2518,13 @@
           "accessed": "2026-11-05",
           "accessNote": "已读取对应2023届历史来源正文。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "赛事组织方实验中心网站，包含ISCC赛事通知。"
+      }
     },
     {
       "id": "digital-media",
@@ -2443,7 +2617,13 @@
           "accessed": "2026-11-05",
           "accessNote": "已读取官网PDF第4页时间表，采用延期后的截止日。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "global-ai",
@@ -2540,7 +2720,13 @@
           "accessed": "2026-11-05",
           "accessNote": "已读取高校2023年10月30日发布正文；附件需验证码，未将附件作为读取依据。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "已核对浏览器页面及赛事身份。"
+      }
     },
     {
       "id": "china-us-maker",
@@ -2629,7 +2815,13 @@
           "sourceType": "university",
           "accessNote": "已读取对应届次来源。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "verified",
+        "checkedAt": "2026-11-26",
+        "label": "全国大赛官网",
+        "note": "全国赛事官网，含上海赛区动态；浏览器可访问，部分TLS客户端存在兼容性差异。"
+      }
     },
     {
       "id": "statistical-modeling",
@@ -2676,7 +2868,7 @@
         "跨学科",
         "开放本科生"
       ],
-      "officialUrl": "https://tjjmds.ai-learning.net/",
+      "officialUrl": null,
       "registration": {
         "year": 2023,
         "months": [],
@@ -2718,7 +2910,17 @@
           "sourceType": "university",
           "accessNote": "已核读PDF第10页报名窗口、第13页组员字段；主通知与国家统计局发布内容一致。"
         }
-      ]
+      ],
+      "officialLink": {
+        "status": "unavailable",
+        "checkedAt": "2026-11-26",
+        "label": "前往赛事官网",
+        "note": "官网HTTPS连接失败，暂不提供官网链接。请参考赛事通知。",
+        "reference": {
+          "label": "高校赛事通知",
+          "url": "https://jwc.shmtu.edu.cn/2026/0313/c12524a288414/page.htm"
+        }
+      }
     }
   ]
 }

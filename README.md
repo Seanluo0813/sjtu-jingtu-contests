@@ -35,3 +35,7 @@
 素材来源见 [ASSET_SOURCES.md](assets/ASSET_SOURCES.md)。Noto Sans CJK SC、Noto Serif CJK SC自托管字体为SIL Open Font License 1.1，完整许可随 [OFL-1.1.txt](assets/fonts/OFL-1.1.txt) 保留；字体元数据与校验见 [subset-manifest.json](assets/fonts/subset-manifest.json)。三份字体共998,024字节，保留覆盖当前28项全部中文的字形超集。
 
 校园照片与校徽版权归各自原权利人，来源及引用范围见素材说明；字体许可不授予照片、校徽的再许可。新增页面文字时应核验字体字形覆盖。
+
+## 2026-11-26 官网核查
+
+核查全部28项赛事官网。21项保留可访问入口（其中2项已更新地址），7项暂停直达链接。华为ICT和大唐杯旧入口已替换；无法正常访问的入口显示原因，不再保留跳转。详见 [核查报告](official-link-audit.md)。

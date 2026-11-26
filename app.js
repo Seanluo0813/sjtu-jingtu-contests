@@ -13,6 +13,15 @@
   const categories = [...new Set(all.map(c => c.category))];
   const byId = id => all.find(c => c.id === id);
   const safeUrl = value => /^https?:\/\//.test(value || '') ? esc(value) : '#sources';
+  function officialEntry(c, className = '') {
+    if (!c.officialUrl) return `<span class="official-unavailable" role="status">官网暂不可用</span>`;
+    return `<a class="${esc(className)}" href="${safeUrl(c.officialUrl)}" target="_blank" rel="noopener">${esc(c.officialLink?.label || '前往赛事官网')} ${ext}</a>`;
+  }
+  function officialNotice(c) {
+    const info = c.officialLink;
+    if (!info) return '';
+    return `<p class="official-note">${esc(info.note)} <span>核查：${esc(info.checkedAt)}</span>${info.reference && !c.officialUrl ? ` <a href="${safeUrl(info.reference.url)}" target="_blank" rel="noopener">${esc(info.reference.label)}</a>` : ''}</p>`;
+  }
   let saved = new Set();
   try { saved = new Set(JSON.parse(localStorage.getItem('jingtu.saved.v1') || '[]').filter(id => byId(id))); } catch {}
   const state = {course:'', search:'', category:'', grade:'', format:'', saved:false, selected:all[0]?.id, compare:[], month:null, year:null};
@@ -49,10 +58,10 @@
     const r = c.registration;
     $('#detail').innerHTML = `<div class="detail-heading"><div><p class="detail-category">${esc(c.category)} <span>CATALOG / ${String(c.catalogNumber).padStart(2,'0')}</span></p><h2>${esc(c.name)}</h2></div><button class="savebutton ${saved.has(c.id)?'is-saved':''}" data-save="${esc(c.id)}" aria-pressed="${saved.has(c.id)}">${saved.has(c.id)?'★ 已收藏':'☆ 收藏'}</button></div>
       <div class="badges"><span class="badge red">2023 榜单内</span><span class="badge">${esc(c.teamFormat)}</span><span class="badge">${esc(c.deliveryMode)}</span></div><p class="detail-summary">${esc(c.summary)}</p>
-      <div class="detail-actions"><a class="primary" href="${safeUrl(c.officialUrl)}" target="_blank" rel="noopener">前往赛事官网 ${ext}</a><button class="secondary" data-compare="${esc(c.id)}" aria-pressed="${state.compare.includes(c.id)}">${state.compare.includes(c.id)?'已加入对比 ✓':'＋ 加入对比'}</button></div>
+      <div class="detail-actions">${officialEntry(c, 'primary')}<button class="secondary" data-compare="${esc(c.id)}" aria-pressed="${state.compare.includes(c.id)}">${state.compare.includes(c.id)?'已加入对比 ✓':'＋ 加入对比'}</button></div>${officialNotice(c)}
       <div class="info-grid"><div class="info-card"><span>报名时间窗口</span><strong>${esc(r.windowText)}</strong>${(r.additionalWindows || []).map(w=>`<small class="window-extra">${esc(w.label)}：${esc(w.start || '开始日待核实')} — ${esc(w.end || '截止日待核实')}</small>`).join('')}<small>${esc(r.edition || r.year || '届次待核验')}${r.status === 'complete'?' · 已核实完整区间':r.status === 'partial'?' · 仅核实部分日期':' · 完整日期待核验'}</small></div><div class="info-card"><span>适合年级 · 学习建议</span><strong>${grades(c.grades)}</strong><small>${esc(c.gradeReason || '结合课程基础与备赛任务整理')}</small></div><div class="info-card"><span>组队与赛制</span><strong>${esc(c.teamSize)}</strong><small>${esc(c.deliveryMode)}</small></div><div class="info-card"><span>参赛资格</span><strong>${esc(c.eligibility)}</strong><small>详细资格以所链接届次章程为准</small></div></div>
       <section class="detail-section"><div class="detail-section-head"><h3>这些课程，可以成为你的起点</h3><span>项目整理的课程关联</span></div><div class="course-tags">${c.courseRelation.map(x => `<div class="course-item"><strong>${esc(x.course)}</strong><p>${esc(x.use)}</p></div>`).join('')}</div></section>
-      <section class="detail-section evidence-section"><h3>赛事资料</h3><p class="detail-note">${esc(r.note)} ${esc(c.levelNote || 'A类认定请查询所在学校的竞赛目录。')}</p><div class="evidence-list">${c.evidence.map(e => `<a href="${safeUrl(e.url)}" target="_blank" rel="noopener"><span>${esc(e.title)}<small>${esc((e.supports || []).join('、'))} · ${esc(e.accessed)}${e.accessNote?' · '+esc(e.accessNote):''}</small></span>${ext}</a>`).join('')}</div></section>`;
+      <section class="detail-section evidence-section"><h3>赛事资料</h3><p class="detail-note">${esc(r.note)} ${esc(c.levelNote || 'A类认定请查询所在学校的竞赛目录。')}</p><div class="evidence-list">${c.evidence.map(e => e.linkUnavailable ? `<div class="evidence-unavailable"><span>${esc(e.title)}<small>历史证据 · 链接暂不可用：${esc(e.linkUnavailable)}</small></span></div>` : `<a href="${safeUrl(e.url)}" target="_blank" rel="noopener"><span>${esc(e.title)}<small>${esc((e.supports || []).join('、'))} · ${esc(e.accessed)}${e.accessNote?' · '+esc(e.accessNote):''}</small></span>${ext}</a>`).join('')}</div></section>`;
   }
   function validRange(c) { const r=c.registration; return r.status==='complete' && /^\d{4}-\d{2}-\d{2}$/.test(r.start || '') && /^\d{4}-\d{2}-\d{2}$/.test(r.end || '') && r.start<=r.end; }
   // Date strings use calendar-year boundaries, even when the competition season spans years.
@@ -92,7 +101,7 @@
     if(!$('#compareDialog').open)return;
     const cs=state.compare.map(byId);
     if(!cs.length){$('#compareDialog').close();return;}
-    const rows=[['方向',c=>esc(c.category)],['赛事级别',c=>`2023 榜单内 · 序号 ${c.catalogNumber}`],['建议年级',c=>grades(c.grades)],['报名窗口',c=>esc(c.registration.windowText)],['参赛形式',c=>`${esc(c.teamFormat)}<br>${esc(c.teamSize)}<br>${esc(c.deliveryMode)}`],['参赛资格',c=>esc(c.eligibility)],['课程关联',c=>c.courses.map(esc).join('、')],['官方入口',c=>`<a href="${safeUrl(c.officialUrl)}" target="_blank" rel="noopener">赛事官网 ${ext}</a>`]];
+    const rows=[['方向',c=>esc(c.category)],['赛事级别',c=>`2023 榜单内 · 序号 ${c.catalogNumber}`],['建议年级',c=>grades(c.grades)],['报名窗口',c=>esc(c.registration.windowText)],['参赛形式',c=>`${esc(c.teamFormat)}<br>${esc(c.teamSize)}<br>${esc(c.deliveryMode)}`],['参赛资格',c=>esc(c.eligibility)],['课程关联',c=>c.courses.map(esc).join('、')],['官方入口',c=>officialEntry(c)+officialNotice(c)]];
     $('#compareTable').innerHTML=`<table><caption class="sr-only">已选赛事的级别、年级、窗口、形式与课程对比</caption><thead><tr><th scope="col">对比维度</th>${cs.map(c=>`<th scope="col">${esc(c.name)}</th>`).join('')}</tr></thead><tbody>${rows.map(([label,fn])=>`<tr><th scope="row">${label}</th>${cs.map(c=>`<td>${fn(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
   }
   function render({syncRoute=true} = {}) {
@@ -115,7 +124,7 @@
   }
   $('#category').innerHTML+=categories.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join('');
   $('#orbitNodes').innerHTML=categories.map((c,i)=>`<button class="orbit-node n${i+1}" data-orbit-category="${esc(c)}"><strong>${esc(c)}</strong><small>${all.filter(x=>x.category===c).length} 项赛事</small></button>`).join('');
-  $('#sourceSummary').innerHTML=`<a class="source-link" href="${safeUrl(data.meta.catalogUrl)}" target="_blank" rel="noopener">2023 竞赛目录 · ${data.meta.catalogCount || 84} 项基准 ${ext}</a><p>收录其中 ${all.length} 个目录条目，系列赛事按一个条目计数。标记“榜单内”；A 类认定由各校规定。</p><p>报名窗口和赛制采用 2023 届资料，缺失项标记待核实；适合年级、方向分类和课程关联由本项目整理。收藏保存在当前浏览器。</p><div class="source-date">2023 历史资料核对日期 <strong>${esc(data.meta.accessed)}</strong></div>`;
+  $('#sourceSummary').innerHTML=`<a class="source-link" href="${safeUrl(data.meta.catalogUrl)}" target="_blank" rel="noopener">2023 竞赛目录 · ${data.meta.catalogCount || 84} 项基准 ${ext}</a><p>收录其中 ${all.length} 个目录条目，系列赛事按一个条目计数。标记“榜单内”；A 类认定由各校规定。</p><p>报名窗口和赛制采用 2023 届资料，缺失项标记待核实；适合年级、方向分类和课程关联由本项目整理。收藏保存在当前浏览器。</p><div class="source-date">2023 历史资料核对日期 <strong>${esc(data.meta.accessed)}</strong></div><p>官网入口另于 ${esc(data.meta.officialLinksCheckedAt)} 核查；失效入口已停用。<a href="official-link-audit.html" target="_blank" rel="noopener">查看全部官网核查结果</a></p>`;
   ['search','category','grade','format'].forEach(key=>$('#'+key).addEventListener(key==='search'?'input':'change',()=>{state[key]=$('#'+key).value.trim();render();}));
   $('#savedOnly').addEventListener('change',()=>{state.saved=$('#savedOnly').checked;render();});
   $('#clearCourse').addEventListener('click',()=>{state.course='';render();});
@@ -145,8 +154,8 @@
   window.addEventListener('hashchange',fromHash);
   window.addEventListener('popstate',fromHash);
   $('#export').addEventListener('click',()=>{
-    const cols=['赛事','榜单序号','方向','级别','建议年级','报名届次','报名窗口','报名补充说明','附加报名记录','开始日期','截止日期','日期核验','个人/团队','人数','线上/线下','课程关联','官网','证据链接','访问日期'];
-    const rows=filtered.map(c=>[c.name,c.catalogNumber,c.category,c.level,grades(c.grades),c.registration.edition,c.registration.windowText,c.registration.note,(c.registration.additionalWindows || []).map(w=>`${w.label}: ${w.start || '开始日待核实'} — ${w.end || '截止日待核实'}`).join('；'),c.registration.start,c.registration.end,c.registration.status,c.teamFormat,c.teamSize,c.deliveryMode,c.courses.join('、'),c.officialUrl,c.evidence.map(e=>e.url).join(' | '),data.meta.accessed]);
+    const cols=['赛事','榜单序号','方向','级别','建议年级','报名届次','报名窗口','报名补充说明','附加报名记录','开始日期','截止日期','日期核验','个人/团队','人数','线上/线下','课程关联','官网','官网状态','官网核查日期','证据链接','历史资料访问日期'];
+    const rows=filtered.map(c=>[c.name,c.catalogNumber,c.category,c.level,grades(c.grades),c.registration.edition,c.registration.windowText,c.registration.note,(c.registration.additionalWindows || []).map(w=>`${w.label}: ${w.start || '开始日待核实'} — ${w.end || '截止日待核实'}`).join('；'),c.registration.start,c.registration.end,c.registration.status,c.teamFormat,c.teamSize,c.deliveryMode,c.courses.join('、'),c.officialUrl || '官网暂不可用',c.officialLink?.note || '',c.officialLink?.checkedAt || '',c.evidence.filter(e=>!e.linkUnavailable).map(e=>e.url).join(' | '),data.meta.accessed]);
     const cell=v=>'"'+String(v??'').replace(/^[=+@-]/,"'$&").replace(/"/g,'""')+'"';
     const blob=new Blob(['\ufeff'+[cols,...rows].map(row=>row.map(cell).join(',')).join('\r\n')],{type:'text/csv;charset=utf-8;'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='竞途-赛事筛选.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast(`已导出 ${filtered.length} 项赛事`);
   });

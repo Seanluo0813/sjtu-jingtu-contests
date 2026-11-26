@@ -335,5 +335,3 @@ header nav a{color:#573a45}
 /* Official entry audit: unavailable links are plain text, never clickable. */
 .official-unavailable{display:inline-flex;align-items:center;border:1px solid #e4c4c4;border-radius:14px;padding:12px 18px;color:#8b2930;background:#fff4f4;font-weight:700}.official-note{font-size:.875rem;line-height:1.7;color:#69575a;margin:10px 0 18px;overflow-wrap:anywhere}.official-note span{white-space:nowrap}.official-note a{color:var(--red,#C8161E);text-decoration:underline}.evidence-unavailable{padding:12px 0;color:#786a6d;border-bottom:1px solid #eee}.evidence-unavailable small{display:block;margin-top:5px;line-height:1.6}
 
-/* Brief, readable introductions for every retained competition. */
-.item-summary{display:block;margin:8px 0;color:#775e64;font-size:14px;line-height:1.65;font-weight:400;overflow-wrap:anywhere}

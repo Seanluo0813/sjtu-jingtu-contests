@@ -51,7 +51,7 @@
     $('#activeCourse').hidden=!state.course;$('#clearCourse').textContent=state.course+' ×';
     $('#listCount').textContent = filtered.length;
     $('#resultStatus').textContent = `找到 ${filtered.length} 项赛事，共收录 ${all.length} 项 ${state.course ? ' · 课程精确匹配「'+state.course+'」' : ' · 点击赛事查看规则、报名窗口与课程关联'}`;
-    $('#contestList').innerHTML = filtered.length ? filtered.map(c => `<button type="button" class="contest-item ${c.id === state.selected ? 'active':''}" data-select="${esc(c.id)}" aria-pressed="${c.id === state.selected}"><span class="category-label">${esc(c.category)} <span>${saved.has(c.id)?'已收藏':''}</span></span><strong class="item-title">${esc(c.name)}</strong><span class="item-summary">${esc(c.summary)}</span><span class="item-meta">${esc(c.teamFormat)} · ${esc(c.teamSize)}</span><span class="item-arrow" aria-hidden="true">↗</span></button>`).join('') : '<div class="empty-state"><h3>没有匹配的赛事</h3><p>试试减少筛选条件，或换个课程关键词。</p><button class="textbutton" data-reset>重置筛选</button></div>';
+    $('#contestList').innerHTML = filtered.length ? filtered.map(c => `<button type="button" class="contest-item ${c.id === state.selected ? 'active':''}" data-select="${esc(c.id)}" aria-pressed="${c.id === state.selected}"><span class="category-label">${esc(c.category)} <span>${saved.has(c.id)?'已收藏':''}</span></span><strong class="item-title">${esc(c.name)}</strong><span class="item-meta">${esc(c.teamFormat)} · ${esc(c.teamSize)}</span><span class="item-arrow" aria-hidden="true">↗</span></button>`).join('') : '<div class="empty-state"><h3>没有匹配的赛事</h3><p>试试减少筛选条件，或换个课程关键词。</p><button class="textbutton" data-reset>重置筛选</button></div>';
   }
   function renderDetail() {
     const c = filtered.find(c => c.id === state.selected);

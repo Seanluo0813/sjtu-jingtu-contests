@@ -2,7 +2,7 @@
   'use strict';
   const data = window.CONTEST_DATA;
   // Fail closed: only reviewed 2026 editions may enter any view or CSV.
-  const all = data.contests.filter(c => c.registration?.year === 2026 && c.yearVerification?.year === 2026 && c.yearVerification?.status === 'verified' && c.evidence?.some(e => e.eventYear === 2026));
+  const all = data.contests.filter(c => c.registration?.year === 2026 && c.yearVerification?.year === 2026 && c.yearVerification?.status === 'verified' && c.evidence?.some(e => e.eventYear === 2026) && /^https:\/\//.test(c.officialUrl || '') && ['verified','updated'].includes(c.officialLink?.status));
   const $ = s => document.querySelector(s);
   const header = $('header');
   const syncHeaderHeight = () => document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
@@ -51,7 +51,7 @@
     $('#activeCourse').hidden=!state.course;$('#clearCourse').textContent=state.course+' ×';
     $('#listCount').textContent = filtered.length;
     $('#resultStatus').textContent = `找到 ${filtered.length} 项赛事，共收录 ${all.length} 项 ${state.course ? ' · 课程精确匹配「'+state.course+'」' : ' · 点击赛事查看规则、报名窗口与课程关联'}`;
-    $('#contestList').innerHTML = filtered.length ? filtered.map(c => `<button type="button" class="contest-item ${c.id === state.selected ? 'active':''}" data-select="${esc(c.id)}" aria-pressed="${c.id === state.selected}"><span class="category-label">${esc(c.category)} <span>${saved.has(c.id)?'已收藏':''}</span></span><strong class="item-title">${esc(c.name)}</strong><span class="item-meta">${esc(c.teamFormat)} · ${esc(c.teamSize)}</span><span class="item-arrow" aria-hidden="true">↗</span></button>`).join('') : '<div class="empty-state"><h3>没有匹配的赛事</h3><p>试试减少筛选条件，或换个课程关键词。</p><button class="textbutton" data-reset>重置筛选</button></div>';
+    $('#contestList').innerHTML = filtered.length ? filtered.map(c => `<button type="button" class="contest-item ${c.id === state.selected ? 'active':''}" data-select="${esc(c.id)}" aria-pressed="${c.id === state.selected}"><span class="category-label">${esc(c.category)} <span>${saved.has(c.id)?'已收藏':''}</span></span><strong class="item-title">${esc(c.name)}</strong><span class="item-summary">${esc(c.summary)}</span><span class="item-meta">${esc(c.teamFormat)} · ${esc(c.teamSize)}</span><span class="item-arrow" aria-hidden="true">↗</span></button>`).join('') : '<div class="empty-state"><h3>没有匹配的赛事</h3><p>试试减少筛选条件，或换个课程关键词。</p><button class="textbutton" data-reset>重置筛选</button></div>';
   }
   function renderDetail() {
     const c = filtered.find(c => c.id === state.selected);
@@ -125,7 +125,7 @@
   }
   $('#category').innerHTML+=categories.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join('');
   $('#orbitNodes').innerHTML=categories.map((c,i)=>`<button class="orbit-node n${i+1}" data-orbit-category="${esc(c)}"><strong>${esc(c)}</strong><small>${all.filter(x=>x.category===c).length} 项赛事</small></button>`).join('');
-  $('#sourceSummary').innerHTML=`<a class="source-link" href="${safeUrl(data.meta.catalogUrl)}" target="_blank" rel="noopener">竞赛目录基准 · ${data.meta.catalogCount || 84} 个母项 ${ext}</a><p>面向计算机／信息类本科生，当前收录 ${all.length} 个 2026 赛事／赛项，对应 ${new Set(all.map(c=>c.catalogNumber)).size} 个目录母项；同一系列的独立赛项分开展示。</p><p><strong>只收录已查到可靠 2026 当届信息的比赛。</strong>查不到当届信息的不收录；未核实报名日期的保留空值。2027 届不纳入。跨年赛季保留真实报名年份。</p><p>2023—2025 年目录材料仅用于核对赛事归属，不作为本届报名或赛制数据。五大分类、年级建议与课程关联由本项目整理；A 类认定以本校政策为准。</p><div class="source-date">2026 资料核对日期 <strong>${esc(data.meta.accessed)}</strong></div><p>过期、证书异常或受限官网入口已停用并提示。<a href="official-link-audit.html" target="_blank" rel="noopener">官网核查结果</a> · <a href="catalog-audit.md" target="_blank" rel="noopener">目录筛选记录</a></p>`;
+  $('#sourceSummary').innerHTML=`<a class="source-link" href="${safeUrl(data.meta.catalogUrl)}" target="_blank" rel="noopener">竞赛目录基准 · ${data.meta.catalogCount || 84} 个母项 ${ext}</a><p>优先计算机专业核心方向，当前收录 ${all.length} 个 2026 赛事／赛项，对应 ${new Set(all.map(c=>c.catalogNumber)).size} 个目录母项；同一系列的独立赛项分开展示。</p><p><strong>只收录已查到可靠 2026 当届信息的比赛。</strong>查不到当届信息、官网不可用或偏离计算机技术方向的均不收录；未核实报名日期保留空值。2027 届不纳入。跨年赛季保留真实报名年份。</p><p>2023—2025 年目录材料仅用于核对赛事归属，不作为本届报名或赛制数据。五大分类、年级建议与课程关联由本项目整理；A 类认定以本校政策为准。</p><div class="source-date">2026 资料核对日期 <strong>${esc(data.meta.accessed)}</strong></div><p>官网不可用的赛事已整项剔除；保留条目的官网均已通过本次浏览器核查。<a href="official-link-audit.html" target="_blank" rel="noopener">官网核查结果</a> · <a href="catalog-audit.md" target="_blank" rel="noopener">目录筛选记录</a></p>`;
   ['search','category','grade','format'].forEach(key=>$('#'+key).addEventListener(key==='search'?'input':'change',()=>{state[key]=$('#'+key).value.trim();render();}));
   $('#savedOnly').addEventListener('change',()=>{state.saved=$('#savedOnly').checked;render();});
   $('#clearCourse').addEventListener('click',()=>{state.course='';render();});
@@ -151,7 +151,7 @@
     else if(b.dataset.month){state.month=state.month===Number(b.dataset.month)?null:Number(b.dataset.month);renderCalendar();}
     else if(b.dataset.calendarContest && !e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();navigate(b.dataset.calendarContest,true);}
   });
-  function fromHash() { const m=location.hash.match(/^#contest\/(.+)$/);if(m){let id;try{id=decodeURIComponent(m[1]);}catch{return;}if(byId(id)){state.selected=id;clearFilters();render({syncRoute:false});$('#explore').scrollIntoView();}} }
+  function fromHash() { const m=location.hash.match(/^#contest\/(.+)$/);if(m){let id;try{id=decodeURIComponent(m[1]);}catch{return;}if(byId(id)){state.selected=id;clearFilters();render({syncRoute:false});$('#explore').scrollIntoView();}else{history.replaceState(null,'','#explore');clearFilters();render({syncRoute:false});toast('该赛事已移出当前目录：仅收录2026届、官网可用且贴合计算机专业的赛事。');$('#explore').scrollIntoView();}} }
   window.addEventListener('hashchange',fromHash);
   window.addEventListener('popstate',fromHash);
   $('#export').addEventListener('click',()=>{

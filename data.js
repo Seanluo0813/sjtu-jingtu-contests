@@ -5020,17 +5020,17 @@ window.CONTEST_DATA = {
       "evidence": [
         {
           "id": "robocon-2026",
-          "title": "2026第25届全国大学生机器人大赛ROBOCON · 官方通知/高校通知",
-          "url": "https://www.robocon.org.cn/h-col-104.html",
+          "title": "南京理工大学：第二十五届ROBOCON暨ABU ROBOCON 2026国内选拔赛举行",
+          "url": "https://zs.njust.edu.cn/a0/4c/c4621a368716/page.htm",
           "accessed": "2026-11-26",
           "eventYear": 2026,
-          "type": "organizer",
+          "type": "host-university",
           "supports": [
-            "2026届次或赛季",
-            "本条注明的赛道信息"
+            "2026届次已举办",
+            "高校组队参赛",
+            "机器人竞技、仿生足式与排球挑战赛范围"
           ],
-          "accessNote": "已核对当届通知；未核实的具体日期和人数不推测。",
-          "linkUnavailable": "浏览器实际访问被拦截（403），暂不提供直达链接。"
+          "accessNote": "承办高校2026年7月21日报道，实际浏览器核查。"
         }
       ],
       "yearVerification": {
@@ -5046,7 +5046,11 @@ window.CONTEST_DATA = {
         "status": "restricted",
         "checkedAt": "2026-11-26",
         "label": "官网暂不可用",
-        "note": "浏览器实际访问被拦截（403），暂不提供直达链接。"
+        "note": "浏览器实际访问被拦截（403），暂不提供直达链接。",
+        "reference": {
+          "label": "查看2026年承办高校报道",
+          "url": "https://zs.njust.edu.cn/a0/4c/c4621a368716/page.htm"
+        }
       }
     },
     {
